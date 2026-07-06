@@ -1,0 +1,93 @@
+{
+  "category": {
+    "name": "Tours",
+    "slug": "tours",
+    "translations": [
+      { "language": "mn", "title": "Аялал" },
+      { "language": "zh", "title": "旅游" },
+      { "language": "ru", "title": "Туры" },
+      { "language": "ko", "title": "투어" },
+      { "language": "ja", "title": "ツアー" }
+    ]
+  },
+  "posts": [
+    {
+      "title": "Gobi Desert Expedition",
+      "slug": "gobi-desert-expedition",
+      "excerpt": "8 days across the Gobi's flaming cliffs, singing dunes, and hidden canyons.",
+      "content": "<h1>Gobi Desert Expedition</h1><p>Journey deep into the legendary Gobi. Walk the flaming cliffs of Bayanzag, climb the singing dunes of Khongoryn Els, and explore the ice-filled Yolyn Am canyon. Nights are spent in traditional ger camps under star-filled skies.</p><ul><li>Duration: 8 days / 7 nights</li><li>Group size: 2-12 travelers</li><li>Best season: May to October</li><li>Includes: guide, 4WD transport, meals, ger camps</li></ul>",
+      "translations": [
+        { "language": "mn", "title": "Говийн экспедици", "excerpt": "Говийн гал уул, дуулдаг элс, нууц хавцлуудаар 8 хоног.", "content": "<h1>Говийн экспедици</h1><p>Алдарт Говь руу гүнзгий аялаарай. Баянзагийн гал уул, Хонгорын элсэн дээр авирч, мөсөөр дүүрэн Ёлын амыг судлаарай. Ододоор дүүрэн тэнгэрийн дор уламжлалт гэр буудалд хононо.</p><ul><li>Хугацаа: 8 өдөр / 7 шөнө</li><li>Багийн хэмжээ: 2-12 аялагч</li><li>Хамгийн тохиромжтой улирал: 5-10 дугаар сар</li><li>Багтаасан: хөтөч, 4WD тээвэр, хоол, гэр буудал</li></ul>" },
+        { "language": "zh", "title": "戈壁探险", "excerpt": "8天穿越戈壁火焰崖、鸣沙山与隐秘峡谷。", "content": "<h1>戈壁探险</h1><p>深入传奇的戈壁。漫步巴彦扎格的火焰崖，攀登洪戈尔鸣沙山，探索冰谷尤林峡谷。夜晚在传统蒙古包营地仰望星空。</p><ul><li>时长：8天7晚</li><li>团队规模：2-12人</li><li>最佳季节：5月至10月</li><li>包含：向导、四驱车、餐饮、蒙古包营地</li></ul>" },
+        { "language": "ru", "title": "Экспедиция в Гоби", "excerpt": "8 дней через огненные скалы, поющие дюны и скрытые каньоны Гоби.", "content": "<h1>Экспедиция в Гоби</h1><p>Отправьтесь вглубь легендарной Гоби. Прогуляйтесь по огненным скалам Баянзаг, поднимитесь на поющие дюны Хонгорын-Элс и исследуйте ледяной каньон Ёлын-Ам. Ночи — в традиционных гэр-лагерях под звездным небом.</p><ul><li>Продолжительность: 8 дней / 7 ночей</li><li>Размер группы: 2-12 путешественников</li><li>Лучший сезон: май–октябрь</li><li>Включено: гид, 4WD-транспорт, питание, гэр-лагеря</li></ul>" },
+        { "language": "ko", "title": "고비 사막 탐험", "excerpt": "화염 절벽, 노래하는 모래언덕, 숨겨진 협곡을 지나는 8일 고비 여정.", "content": "<h1>고비 사막 탐험</h1><p>전설적인 고비의 깊은 곳으로 떠나세요. 바얀자그의 화염 절벽을 걷고, 홍고린 엘스의 노래하는 모래언덕을 오륾며, 얼음이 가득한 율린 암 협곡을 탐험합니다. 별이 가득한 하늘 아래 전통 게르 캠프에서 밤을 볃니다.</p><ul><li>일정: 8일 / 7박</li><li>그룹 규모: 2-12명</li><li>최적 시즌: 5월~10월</li><li>포함: 가이드, 4WD 교통, 식사, 게르 캠프</li></ul>" },
+        { "language": "ja", "title": "ゴビ砂漠探検", "excerpt": "炎の崖、歌う砂丘、隠れた峡谷を巡る8日間のゴビ旅。", "content": "<h1>ゴビ砂漠探検</h1><p>伝説のゴビの奥深くへ旅しましょう。バヤンザグの炎の崖を歩き、ホンゴリーン・エルスの歌う砂丘を登り、氷に満ちたヨリン・アム峡谷を探検します。星空の下、伝統的なゲルキャンプで夜を過ごします。</p><ul><li>期間：8日間 / 7泊</li><li>グループサイズ：2-12名</li><li>ベストシーズン：5月〜10月</li><li>含まれるもの：ガイド、4WD交通、食事、ゲルキャンプ</li></ul>" }
+      ]
+    },
+    {
+      "title": "Northern Mongolia Horse Trek",
+      "slug": "northern-mongolia-horse-trek",
+      "excerpt": "Ride through Lake Khovsgol and taiga forests with local Tsaatan guides.",
+      "content": "<h1>Northern Mongolia Horse Trek</h1><p>Experience Mongolia's wild north on horseback. Circle Lake Khovsgol, the 'Blue Pearl,' camp in taiga forests, and meet the Tsaatan reindeer herders who have lived here for generations.</p><ul><li>Duration: 10 days / 9 nights</li><li>Riding level: intermediate</li><li>Best season: June to September</li><li>Includes: horses, guide, camping gear, meals</li></ul>",
+      "translations": [
+        { "language": "mn", "title": "Хөвсгөлийн морин аялал", "excerpt": "Хөвсгөл нуур, тайгын ойг дайруулан Цаатан хөтөчтэй морин аялал.", "content": "<h1>Хөвсгөлийн морин аялал</h1><p>Мориндоо Монголын зэрлэг хойдыг мэдрээрэй. 'Хөх сувд' Хөвсгөл нуурыг тойрон, тайгын ойд буудлан, олон үеэрээ энд амьдарсан Цаатан бугын малчидтай уулз.</p><ul><li>Хугацаа: 10 өдөр / 9 шөнө</li><li>Морь унах түвшин: дунд</li><li>Хамгийн тохиромжтой улирал: 6-9 дугаар сар</li><li>Багтаасан: морь, хөтөч, майхан хэрэгсэл, хоол</li></ul>" },
+        { "language": "zh", "title": "蒙古北部骑马之旅", "excerpt": "与查坦向导一起骑马穿越库苏古尔湖和泰加森林。", "content": "<h1>蒙古北部骑马之旅</h1><p>骑马感受蒙古狂野的北方。环绕“蓝色珍珠”库苏古尔湖，在泰加森林中露营，并拜访世代居住于此的查坦驯鹿牧民。</p><ul><li>时长：10天9晚</li><li>骑行水平：中级</li><li>最佳季节：6月至9月</li><li>包含：马匹、向导、露营装备、餐饮</li></ul>" },
+        { "language": "ru", "title": "Конный поход по Северной Монголии", "excerpt": "Верхом вокруг озера Ховсгол и тайги с местными цаатанскими гидами.", "content": "<h1>Конный поход по Северной Монголии</h1><p>Почувствуйте дикий север Монголии верхом. Объедите озеро Ховсгол, «Голубую жемчужину», разбивайте лагерь в тайге и встретьтесь с цаатанскими оленеводами, живущими здесь поколениями.</p><ul><li>Продолжительность: 10 дней / 9 ночей</li><li>Уровень верховой езды: средний</li><li>Лучший сезон: июнь–сентябрь</li><li>Включено: лошади, гид, снаряжение, питание</li></ul>" },
+        { "language": "ko", "title": "북부 몽골 승마 트레킹", "excerpt": "호브스골 호수와 타이가 숲을 지나는 차탄 가이드와의 승마 여행.", "content": "<h1>북부 몽골 승마 트레킹</h1><p>말을 타고 몽골의 야생 북부를 경험하세요. '푸른 진주' 호브스골 호수를 돌고, 타이가 숲에서 캠핑하며 대대로 이곳에 살아온 차탄 순록 유목민을 만납니다.</p><ul><li>일정: 10일 / 9박</li><li>승마 레벨: 중급</li><li>최적 시즌: 6월~9월</li><li>포함: 말, 가이드, 캠핑 장비, 식사</li></ul>" },
+        { "language": "ja", "title": "北部モンゴル乗馬トレッキング", "excerpt": "ホブスゴル湖とタイガの森を、チャタン族ガイドと乗馬で巡る。", "content": "<h1>北部モンゴル乗馬トレッキング</h1><p>馬に乗ってモンゴルの野生の北部を体験します。「青い真珠」ホブスゴル湖を周遊し、タイガの森でキャンプ、何世代もここで暮らしてきたチャタンのトナカイ遊牧民と出会います。</p><ul><li>期間：10日間 / 9泊</li><li>乗馬レベル：中級</li><li>ベストシーズン：6月〜9月</li><li>含まれるもの：馬、ガイド、キャンプ装備、食事</li></ul>" }
+      ]
+    },
+    {
+      "title": "Naadam Festival Tour",
+      "slug": "naadam-festival-tour",
+      "excerpt": "Witness Mongolia's greatest traditional festival in Ulaanbaatar and the countryside.",
+      "content": "<h1>Naadam Festival Tour</h1><p>Celebrate Mongolia's 'Three Manly Games' — wrestling, horse racing, and archery. This tour combines the excitement of Ulaanbaatar's national Naadam with a rural festival in a remote province.</p><ul><li>Duration: 7 days / 6 nights</li><li>Dates: Early July each year</li><li>Group size: 4-14 travelers</li><li>Includes: festival access, guide, transport, ger camps</li></ul>",
+      "translations": [
+        { "language": "mn", "title": "Наадмын аялал", "excerpt": "Улаанбаатар болон хөдөөгийн Наадмыг үзэж, мэдрээрэй.", "content": "<h1>Наадмын аялал</h1><p>Монголын 'Эрхтэй гурван наадам' — бөх, морь, сурын харваатай танилцаарай. Энэ аялал Улаанбаатарын үндэсний Наадмын дуу чимээг алс орон нутагт болдог наадмын үйл ажиллагаатай хослуулсан.</p><ul><li>Хугацаа: 7 өдөр / 6 шөнө</li><li>Огноо: Жил бүрийн 7-р сарын эхэн</li><li>Багийн хэмжээ: 4-14 аялагч</li><li>Багтаасан: наадмын нэвтрэх эрх, хөтөч, тээвэр, гэр буудал</li></ul>" },
+        { "language": "zh", "title": "那达慕节之旅", "excerpt": "在乌兰巴托与乡村亲历蒙古最盛大的传统节日。", "content": "<h1>那达慕节之旅</h1><p>庆祝蒙古的“男子三艺”——摔跤、赛马、射箭。本次行程将乌兰巴托国家那达慕的激情与偏远省份的乡村节庆结合起来。</p><ul><li>时长：7天6晚</li><li>日期：每年7月初</li><li>团队规模：4-14人</li><li>包含：节庆入场、向导、交通、蒙古包营地</li></ul>" },
+        { "language": "ru", "title": "Тур на фестиваль Надам", "excerpt": "Станьте свидетелем величайшего традиционного фестиваля Монголии.", "content": "<h1>Тур на фестиваль Надам</h1><p>Примите участие в «Трех мужских играх» Монголии — борьбе, скачках и стрельбе из лука. Тур сочетает национальный Надам в Улан-Баторе с сельским фестивалем в отдаленном аймаке.</p><ul><li>Продолжительность: 7 дней / 6 ночей</li><li>Даты: начало июля каждого года</li><li>Размер группы: 4-14 путешественников</li><li>Включено: доступ на фестиваль, гид, транспорт, гэр-лагеря</li></ul>" },
+        { "language": "ko", "title": "나담 축제 투어", "excerpt": "울란바토르와 시골에서 몽골 최고의 전통 축제를 경험하세요.", "content": "<h1>나담 축제 투어</h1><p>몽골의 '세 가지 남성의 게임' — 씨름, 말 경주, 양궁을 경험하세요. 이번 투어는 울란바토르 국가 나담의 흥분을 외딴 주의 시골 축제와 결합합니다.</p><ul><li>일정: 7일 / 6박</li><li>날짜: 매년 7월 초</li><li>그룹 규모: 4-14명</li><li>포함: 축제 입장, 가이드, 교통, 게르 캠프</li></ul>" },
+        { "language": "ja", "title": "ナーダム祭ツアー", "excerpt": "ウランバートルと地方でモンゴル最大の伝統祭りを体感。", "content": "<h1>ナーダム祭ツアー</h1><p>モンゴルの「男の三競技」——相撲、馬術、アーチェリーを体感します。ウランバートルの国家ナーダムの興奮と、僻地の地方祭を組み合わせたツアーです。</p><ul><li>期間：7日間 / 6泊</li><li>日程：毎年7月初旬</li><li>グループサイズ：4-14名</li><li>含まれるもの：祭り入場、ガイド、交通、ゲルキャンプ</li></ul>" }
+      ]
+    },
+    {
+      "title": "Mongolia Photography Safari",
+      "slug": "mongolia-photography-safari",
+      "excerpt": "Capture golden light, wildlife, and nomadic life with pro tips from local guides.",
+      "content": "<h1>Mongolia Photography Safari</h1><p>Designed for photographers of all levels. Visit landscapes at the perfect hour, photograph wild horses, eagles, and nomadic families, and receive guidance on composition and light.</p><ul><li>Duration: 9 days / 8 nights</li><li>Group size: 4-8 guests</li><li>Best season: September for autumn colors</li><li>Includes: photo guide, 4WD, ger camps, meals</li></ul>",
+      "translations": [
+        { "language": "mn", "title": "Гэрэл зургийн сафари", "excerpt": "Орон нутгийн хөтөчдийн зөвлөгөөтэй алтан гэрэл, ан амьтан, хөдөөгийн амьдралыг буулга.", "content": "<h1>Гэрэл зургийн сафари</h1><p>Бүх түвшний гэрэл зурагчдад зориулсан. Гайхалтай цаг үед ландшафтаар аялаж, зэрлэг морь, бүргэд, малчны өрхийг зураглаж, композици, гэрлийн талаар зөвлөгөө аваарай.</p><ul><li>Хугацаа: 9 өдөр / 8 шөнө</li><li>Багийн хэмжээ: 4-8 зочин</li><li>Хамгийн тохиромжтой улирал: намрын өнгөтэй 9 сар</li><li>Багтаасан: гэрэл зургийн хөтөч, 4WD, гэр буудал, хоол</li></ul>" },
+        { "language": "zh", "title": "蒙古摄影之旅", "excerpt": "在当地向导指导下捕捉金色光线、野生动物与游牧生活。", "content": "<h1>蒙古摄影之旅</h1><p>适合各级摄影爱好者。在最佳时刻抵达景观地，拍摄野马、雄鹰和游牧家庭，并获得构图与光线的专业建议。</p><ul><li>时长：9天8晚</li><li>团队规模：4-8人</li><li>最佳季节：9月秋色</li><li>包含：摄影向导、四驱车、蒙古包营地、餐饮</li></ul>" },
+        { "language": "ru", "title": "Фотосафари по Монголии", "excerpt": "Запечатлейте золотой свет, дикую природу и кочевую жизнь с советами местных гидов.", "content": "<h1>Фотосафари по Монголии</h1><p>Для фотографов любого уровня. Посещайте пейзажи в идеальный час, снимайте диких лошадей, орлов и кочевые семьи и получайте советы по композиции и свету.</p><ul><li>Продолжительность: 9 дней / 8 ночей</li><li>Размер группы: 4-8 гостей</li><li>Лучший сезон: сентябрь для осенних красок</li><li>Включено: фото-гид, 4WD, гэр-лагеря, питание</li></ul>" },
+        { "language": "ko", "title": "몽골 사진 사파리", "excerpt": "현지 가이드의 프로 팁으로 황금빛 빛, 야생동물, 유목 생활을 담아보세요.", "content": "<h1>몽골 사진 사파리</h1><p>모든 수준의 사진가를 위해 설계되었습니다. 최적의 시간에 풍경을 방문하고, 야생 말과 독수리, 유목 가족을 촬영하며 구도와 빛에 대한 지도를 받습니다.</p><ul><li>일정: 9일 / 8박</li><li>그룹 규모: 4-8명</li><li>최적 시즌: 가을 색채의 9월</li><li>포함: 사진 가이드, 4WD, 게르 캠프, 식사</li></ul>" },
+        { "language": "ja", "title": "モンゴル写真サファリ", "excerpt": "現地ガイドのプロのアドバイスで金色の光、野生動物、遊牧生活を切り取る。", "content": "<h1>モンゴル写真サファリ</h1><p>あらゆるレベルの写真家向けに設計されています。ベストな時間帯に風景を訪れ、野生の馬、ワシ、遊牧民の家族を撮影し、構図と光に関するガイダンスを受けます。</p><ul><li>期間：9日間 / 8泊</li><li>グループサイズ：4-8名</li><li>ベストシーズン：紅葉の9月</li><li>含まれるもの：写真ガイド、4WD、ゲルキャンプ、食事</li></ul>" }
+      ]
+    },
+    {
+      "title": "How to Pack for Mongolia",
+      "slug": "how-to-pack-for-mongolia",
+      "excerpt": "A practical guide to layering, footwear, and gear for every season.",
+      "content": "<h1>How to Pack for Mongolia</h1><p>Mongolia's weather can shift from blazing sun to sudden wind in a single afternoon. The key is layering and versatility.</p><ul><li>Base layers: merino wool or synthetic</li><li>Insulating mid-layer: fleece or down</li><li>Windproof outer shell</li><li>Sturdy hiking boots and camp sandals</li><li>Sun hat, sunglasses, and SPF</li><li>Headlamp and power bank</li></ul><p>Keep luggage soft and durable — roads can be rough and you'll move between vehicles and gers often.</p>",
+      "translations": [
+        { "language": "mn", "title": "Монголд юу авч явах вэ?", "excerpt": "Улирал бүрт тохирсон хувцас, гутал, хэрэгслийн практик гарын авлага.", "content": "<h1>Монголд юу авч явах вэ?</h1><p>Монголын цаг агаар нэг өдрийн дотор халуун нарнаас гэнэтийн салхи хүртэл өөрчлөгдөж болно. Хамгийн чухал нь давхар хувцаслах, олон талт байдал.</p><ul><li>Дотор хувцас: мерино ноос эсвэл синтетик</li><li>Дулаахан дунд давхарга: флис эсвэл доош</li><li>Салхи татдаг гадуур хувцас</li><li>Бат бөх явган гутал, майхан дээрх сандал</li><li>Нарны малгай, нарны шил, нарнаас хамгаалах тос</li><li>Толгойн гэрэл, цэнэглэгч</li></ul>" },
+        { "language": "zh", "title": "蒙古行李打包指南", "excerpt": "针对四季的 layering、鞋履与装备实用指南。", "content": "<h1>蒙古行李打包指南</h1><p>蒙古的天气可能在一下午内从烈日转为突如其来的大风。关键是分层穿着和多功能装备。</p><ul><li>贴身层：美利奴羊毛或合成纤维</li><li>保暖中层：抓绒或羽绒</li><li>防风外层</li><li>结实徒步靴与营地凉鞋</li><li>遮阳帽、墨镜、防晒霜</li><li>头灯与充电宝</li></ul>" },
+        { "language": "ru", "title": "Что взять в Монголию", "excerpt": "Практическое руководство по слоям, обуви и снаряжению на любой сезон.", "content": "<h1>Что взять в Монголию</h1><p>Погода в Монголии может за один день смениться с палящего солнца на внезапный ветер. Главное — многослойность и универсальность.</p><ul><li>Базовый слой: меринос или синтетика</li><li>Утепляющий слой: флис или пух</li><li>Ветрозащитная оболочка</li><li>Прочные ботинки и кемпинговые сандалии</li><li>Панама, очки, SPF</li><li>Налобный фонарь и power bank</li></ul>" },
+        { "language": "ko", "title": "몽골 여행 짐 싸기", "excerpt": "모든 계절을 위한 레이어링, 신발, 장비 실용 가이드.", "content": "<h1>몽골 여행 짐 싸기</h1><p>몽골의 날씨는 한 오후에도 뜨거운 햇살에서 갑작스러운 바람으로 변할 수 있습니다. 핵심은 레이어링과 다용도성입니다.</p><ul><li>베이스 레이어: 메리노 울 또는 합성 섬유</li><li>보온 미들 레이어: 플리스 또는 다운</li><li>방풍 아우터</li><li>튼튼한 하이킹 부츠와 캠프 샌들</li><li>모자, 선글라스, 자외선 차단제</li><li>헤드램프와 보조 배터리</li></ul>" },
+        { "language": "ja", "title": "モンゴル旅行の持ち物", "excerpt": "四季を通じたレイヤリング、履物、ギアの実用ガイド。", "content": "<h1>モンゴル旅行の持ち物</h1><p>モンゴルの天気は、灼熱の太陽から突然の風へと午後のうちに変わることがあります。ポイントはレイヤリングと多用途性です。</p><ul><li>ベースレイヤー：メリノウールまたは合成繊維</li><li>中間保温層：フリースまたはダウン</li><li>防風アウターシェル</li><li>頑丈なハイキングブーツとキャンプサンダル</li><li>日よけ帽、サングラス、日焼け止め</li><li>ヘッドランプとモバイルバッテリー</li></ul>" }
+      ]
+    },
+    {
+      "title": "Top 5 Mongolian Dishes to Try",
+      "slug": "top-mongolian-dishes",
+      "excerpt": "From buuz to airag, discover the flavors that fuel nomadic life.",
+      "content": "<h1>Top 5 Mongolian Dishes to Try</h1><p>Mongolian cuisine is shaped by the steppe: hearty, simple, and designed to fuel a life outdoors.</p><ol><li><strong>Buuz</strong> — steamed meat dumplings served at celebrations.</li><li><strong>Khuushuur</strong> — crispy fried meat pastries.</li><li><strong>Tsuiwan</strong> — stir-fried noodles with mutton and vegetables.</li><li><strong>Boodog</strong> — whole goat cooked with hot stones.</li><li><strong>Airag</strong> — fermented mare's milk, a nomadic staple.</li></ol><p>Most meals on tour include fresh dairy, handmade bread, and free-range meat from local herders.</p>",
+      "translations": [
+        { "language": "mn", "title": "Амтлах 5 Монгол хоол", "excerpt": "Буузаас эхлээд айраг хүртэл хөдөөгийн амьдралыг тэжээдэг амтыг нээ.", "content": "<h1>Амтлах 5 Монгол хоол</h1><p>Монгол хоол талаар бүрдсэн: даруухан, энгийн, гадаа амьдралыг тэжээхээр бүтсэн.</p><ol><li><strong>Бууз</strong> — баяр ёслолд өгдөг махан жигнэмэг.</li><li><strong>Хуушуур</strong> — шарсан махан боов.</li><li><strong>Цуйван</strong> — хонины мах, ногоотой хуурган гоймон.</li><li><strong>Боодог</strong> — халуун чулуугаар хийсэн бүтэн ямаа.</li><li><strong>Айраг</strong> — хөдөөгийн уламжлалт исгэлэг адууны сүү.</li></ol>" },
+        { "language": "zh", "title": "必尝的5道蒙古美食", "excerpt": "从包子到马奶酒，发现滋养游牧生活的风味。", "content": "<h1>必尝的5道蒙古美食</h1><p>蒙古菜受草原塑造： hearty、简单，为户外生活提供能量。</p><ol><li><strong>包子（Buuz）</strong> — 节庆时吃的蒸肉饺。</li><li><strong>炸肉饼（Khuushuur）</strong> — 酥脆的炸肉馅饼。</li><li><strong>炒面（Tsuiwan）</strong> — 羊肉蔬菜炒面。</li><li><strong>石头烤全羊（Boodog）</strong> — 用烧热的石头烤整只山羊。</li><li><strong>马奶酒（Airag）</strong> — 发酵马奶，游牧民族的主食饮品。</li></ol>" },
+        { "language": "ru", "title": "5 монгольских блюд, которые стоит попробовать", "excerpt": "От бууза до айрага — откройте вкусы, питающие кочевую жизнь.", "content": "<h1>5 монгольских блюд, которые стоит попробовать</h1><p>Монгольская кухня сформирована степью: сытная, простая и созданная для жизни на свежем воздухе.</p><ol><li><strong>Бууз</strong> — паровые мясные пельмени на праздники.</li><li><strong>Хушуур</strong> — хрустящие жареные мясные пирожки.</li><li><strong>Цуйван</strong> — жареная лапша с бараниной и овощами.</li><li><strong>Боодог</strong> — целый козел, приготовленный с горячими камнями.</li><li><strong>Айраг</strong> — кислое молоко кобылы, основа кочевого рациона.</li></ol>" },
+        { "language": "ko", "title": "꼭 먹어봐야 할 몽골 음식 5가지", "excerpt": "부즈부터 아이락까지 유목 생활을 떠받치는 맛을 발견하세요.", "content": "<h1>꼭 먹어봐야 할 몽골 음식 5가지</h1><p>몽골 요리는 초원에서 형성되었습니다: 든든하고 단순하며 야외 생활에 에너지를 제공합니다.</p><ol><li><strong>부즈</strong> — 축하 행사에 나오는 찐 고기 만두.</li><li><strong>후슈르</strong> — 바삭한 튀긴 고기 파이.</li><li><strong>츠이완</strong> — 양고기와 채소를 볶은 국수.</li><li><strong>보오도그</strong> — 뜨거운 돌로 익힌 통 염소.</li><li><strong>아이락</strong> — 발효 암말 우유, 유목민의 주식.</li></ol>" },
+        { "language": "ja", "title": "試すべきモンゴル料理トップ5", "excerpt": "ブーズからアイラグまで、遊牧生活を支える味を発見。", "content": "<h1>試すべきモンゴル料理トップ5</h1><p>モンゴル料理は大草原によって形作られました。ヘartyでシンプル、屋外生活にエネルギーを与えるように作られています。</p><ol><li><strong>ブーズ</strong> — お祝いに出される蒸し肉餃子。</li><li><strong>フシュール</strong> — カリカリの揚げ肉パイ。</li><li><strong>ツイワン</strong> — 羊肉と野菜の焼きそば。</li><li><strong>ボードグ</strong> — 熱い石で調理した丸焼き山羊。</li><li><strong>アイラグ</strong> — 発酵させた牝馬の乳、遊牧民族の主食。</li></ol>" }
+      ]
+    }
+  ]
+}

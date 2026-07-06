@@ -1,0 +1,38 @@
+{
+  "motion_level": 2,
+  "visual_direction": "editorial-luxury",
+  "packages": [
+    "framer-motion",
+    "clsx",
+    "tailwind-merge",
+    "lucide-react",
+    "next-themes"
+  ],
+  "shadcn_components": [],
+  "custom_components": [
+    "Header",
+    "Footer",
+    "Hero",
+    "TrustBar",
+    "TourCard",
+    "TourGrid",
+    "USPCard",
+    "StorySection",
+    "TestimonialCard",
+    "BlogCard",
+    "BlogGrid",
+    "FinalCTA",
+    "PageHeader",
+    "FilterSidebar",
+    "ContactForm"
+  ],
+  "animation_config": {
+    "core_library": "framer-motion",
+    "scroll_library": "none",
+    "text_animation": "none",
+    "page_transition": "framer",
+    "ambient_system": "css",
+    "micro_interactions": "framer-motion",
+    "gsap_plugins": []
+  }
+}

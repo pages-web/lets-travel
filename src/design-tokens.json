@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "siteName": "lets-travel",
+    "visualDirection": "editorial-luxury",
+    "motionLevel": 2,
+    "defaultLocale": "en",
+    "locales": ["en", "mn", "zh", "ru", "ko", "ja"]
+  },
+  "colors": {
+    "brand": {
+      "50": "#FFF7ED",
+      "100": "#FFEDD5",
+      "200": "#FED7AA",
+      "300": "#FDBA74",
+      "400": "#FB923C",
+      "500": "#F97316",
+      "600": "#EA580C",
+      "700": "#C2410C",
+      "800": "#9A3412",
+      "900": "#7C2D12",
+      "950": "#431407"
+    },
+    "neutral": {
+      "50": "#FAFAF9",
+      "100": "#F5F5F4",
+      "200": "#E7E5E4",
+      "300": "#D6D3D1",
+      "400": "#A8A29E",
+      "500": "#78716C",
+      "600": "#57534E",
+      "700": "#44403C",
+      "800": "#292524",
+      "900": "#1C1917",
+      "950": "#0C0A09"
+    },
+    "semantic": {
+      "background": "#FAF9F6",
+      "foreground": "#1C1917",
+      "card": "#FFFFFF",
+      "cardForeground": "#1C1917",
+      "popover": "#FFFFFF",
+      "popoverForeground": "#1C1917",
+      "primary": "#B45309",
+      "primaryForeground": "#FFFFFF",
+      "secondary": "#F5F5F4",
+      "secondaryForeground": "#1C1917",
+      "muted": "#F5F5F4",
+      "mutedForeground": "#78716C",
+      "accent": "#F5F5F4",
+      "accentForeground": "#1C1917",
+      "border": "#E7E5E4",
+      "input": "#FAF9F6",
+      "ring": "#B45309",
+      "success": "#16A34A",
+      "warning": "#F59E0B",
+      "destructive": "#DC2626"
+    }
+  },
+  "typography": {
+    "families": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
+    },
+    "scale": {
+      "xs": 13,
+      "sm": 14,
+      "base": 16,
+      "lg": 18,
+      "xl": 20,
+      "2xl": 24,
+      "3xl": 30,
+      "4xl": 36,
+      "5xl": 42,
+      "6xl": 56,
+      "7xl": 72
+    }
+  },
+  "spacing": {
+    "scale": {
+      "0": 0,
+      "1": 4,
+      "2": 8,
+      "3": 12,
+      "4": 16,
+      "5": 20,
+      "6": 24,
+      "8": 32,
+      "10": 40,
+      "12": 48,
+      "16": 64,
+      "20": 80,
+      "24": 96
+    },
+    "layout": {
+      "container": 1280,
+      "gutter": 24,
+      "sectionY": 80,
+      "pageX": 60
+    }
+  },
+  "radius": {
+    "sm": 6,
+    "md": 8,
+    "lg": 12,
+    "xl": 16,
+    "2xl": 20,
+    "full": 9999
+  },
+  "shadows": {
+    "sm": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+    "md": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+    "lg": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+    "xl": "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)"
+  },
+  "motion": {
+    "duration": {
+      "fast": 0.15,
+      "normal": 0.2,
+      "slow": 0.3
+    },
+    "easing": {
+      "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "in": "cubic-bezier(0.4, 0, 1, 1)",
+      "out": "cubic-bezier(0, 0, 0.2, 1)"
+    },
+    "spring_configs": {
+      "button": { "type": "spring", "stiffness": 400, "damping": 25 }
+    },
+    "variants": {
+      "fadeInUp": { "initial": { "opacity": 0, "y": 24 }, "animate": { "opacity": 1, "y": 0 }, "transition": { "duration": 0.5, "ease": "out" } },
+      "cardHover": { "whileHover": { "y": -4, "boxShadow": "0 10px 15px -3px rgb(0 0 0 / 0.1)" }, "transition": { "duration": 0.2 } },
+      "buttonHover": { "whileHover": { "scale": 1.02 }, "whileTap": { "scale": 0.98 }, "transition": { "duration": 0.2 } }
+    },
+    "gsap_configs": {}
+  }
+}

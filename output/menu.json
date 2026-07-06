@@ -1,0 +1,158 @@
+[
+  {
+    "label": "Home",
+    "url": "/",
+    "order": 1,
+    "kind": "header",
+    "translations": [
+      { "language": "mn", "title": "Нүүр" },
+      { "language": "zh", "title": "首页" },
+      { "language": "ru", "title": "Главная" },
+      { "language": "ko", "title": "홈" },
+      { "language": "ja", "title": "ホーム" }
+    ]
+  },
+  {
+    "label": "Tours",
+    "url": "/tours",
+    "order": 2,
+    "kind": "header",
+    "translations": [
+      { "language": "mn", "title": "Аялал" },
+      { "language": "zh", "title": "旅游" },
+      { "language": "ru", "title": "Туры" },
+      { "language": "ko", "title": "투어" },
+      { "language": "ja", "title": "ツアー" }
+    ]
+  },
+  {
+    "label": "About",
+    "url": "/about",
+    "order": 3,
+    "kind": "header",
+    "translations": [
+      { "language": "mn", "title": "Бидний тухай" },
+      { "language": "zh", "title": "关于我们" },
+      { "language": "ru", "title": "О нас" },
+      { "language": "ko", "title": "회사 소개" },
+      { "language": "ja", "title": "私たちについて" }
+    ]
+  },
+  {
+    "label": "Blog",
+    "url": "/blog",
+    "order": 4,
+    "kind": "header",
+    "translations": [
+      { "language": "mn", "title": "Блог" },
+      { "language": "zh", "title": "博客" },
+      { "language": "ru", "title": "Блог" },
+      { "language": "ko", "title": "블로그" },
+      { "language": "ja", "title": "ブログ" }
+    ]
+  },
+  {
+    "label": "Contact",
+    "url": "/contact",
+    "order": 5,
+    "kind": "header",
+    "translations": [
+      { "language": "mn", "title": "Холбоо барих" },
+      { "language": "zh", "title": "联系我们" },
+      { "language": "ru", "title": "Контакты" },
+      { "language": "ko", "title": "문의하기" },
+      { "language": "ja", "title": "お問い合わせ" }
+    ]
+  },
+  {
+    "label": "Home",
+    "url": "/",
+    "order": 1,
+    "kind": "footer",
+    "translations": [
+      { "language": "mn", "title": "Нүүр" },
+      { "language": "zh", "title": "首页" },
+      { "language": "ru", "title": "Главная" },
+      { "language": "ko", "title": "홈" },
+      { "language": "ja", "title": "ホーム" }
+    ]
+  },
+  {
+    "label": "Tours",
+    "url": "/tours",
+    "order": 2,
+    "kind": "footer",
+    "translations": [
+      { "language": "mn", "title": "Аялал" },
+      { "language": "zh", "title": "旅游" },
+      { "language": "ru", "title": "Туры" },
+      { "language": "ko", "title": "투어" },
+      { "language": "ja", "title": "ツアー" }
+    ]
+  },
+  {
+    "label": "About",
+    "url": "/about",
+    "order": 3,
+    "kind": "footer",
+    "translations": [
+      { "language": "mn", "title": "Бидний тухай" },
+      { "language": "zh", "title": "关于我们" },
+      { "language": "ru", "title": "О нас" },
+      { "language": "ko", "title": "회사 소개" },
+      { "language": "ja", "title": "私たちについて" }
+    ]
+  },
+  {
+    "label": "Blog",
+    "url": "/blog",
+    "order": 4,
+    "kind": "footer",
+    "translations": [
+      { "language": "mn", "title": "Блог" },
+      { "language": "zh", "title": "博客" },
+      { "language": "ru", "title": "Блог" },
+      { "language": "ko", "title": "블로그" },
+      { "language": "ja", "title": "ブログ" }
+    ]
+  },
+  {
+    "label": "Contact",
+    "url": "/contact",
+    "order": 5,
+    "kind": "footer",
+    "translations": [
+      { "language": "mn", "title": "Холбоо барих" },
+      { "language": "zh", "title": "联系我们" },
+      { "language": "ru", "title": "Контакты" },
+      { "language": "ko", "title": "문의하기" },
+      { "language": "ja", "title": "お問い合わせ" }
+    ]
+  },
+  {
+    "label": "FAQ",
+    "url": "/faq",
+    "order": 6,
+    "kind": "footer",
+    "translations": [
+      { "language": "mn", "title": "Түгээмэл асуулт" },
+      { "language": "zh", "title": "常见问题" },
+      { "language": "ru", "title": "FAQ" },
+      { "language": "ko", "title": "자주 묻는 질문" },
+      { "language": "ja", "title": "よくある質問" }
+    ]
+  },
+  {
+    "label": "Privacy",
+    "url": "/privacy",
+    "order": 7,
+    "kind": "footer",
+    "translations": [
+      { "language": "mn", "title": "Нууцлалын бодлого" },
+      { "language": "zh", "title": "隐私政策" },
+      { "language": "ru", "title": "Конфиденциальность" },
+      { "language": "ko", "title": "개인정보 처리방침" },
+      { "language": "ja", "title": "プライバシー" }
+    ]
+  }
+]

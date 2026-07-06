@@ -1,0 +1,100 @@
+[
+  {
+    "section": "home",
+    "name": "Let's Travel Mongolia",
+    "slug": "home",
+    "description": "Authentic Mongolia tours crafted by local experts. Small groups, epic landscapes, and nomadic culture.",
+    "content": "<h1 class='text-4xl font-bold'>Let's Travel Mongolia</h1><p class='mt-4 text-lg'>We design immersive journeys across Mongolia's endless steppes, dramatic deserts, and snow-capped mountains. From the Gobi's flaming cliffs to the reindeer herders of the north, every itinerary is built around real encounters with nomadic culture and untouched nature.</p><p class='mt-4'>Travel with a local team that puts sustainability, safety, and genuine hospitality first.</p>",
+    "translations": [
+      { "language": "mn", "title": "Let's Travel Mongolia", "content": "<h1 class='text-4xl font-bold'>Let's Travel Mongolia</h1><p class='mt-4 text-lg'>Бид Монголын өргөн уудам тал, элсэн манхан, цасан оргилууд даяар жинхэнэ аяллуудыг төлөвлөдөг. Говийн гал уулнаас эхлээд хойд нутгийн ойн бугын малчид хүртэл бүрт itineraries нь хөдөөгийн соёл, тайван байгальтай хийх уулзалтаар бүрддэг.</p><p class='mt-4'>Тогтвортой аялал, аюулгүй байдал, жинхэнэ зочломтгой байдлыг эхэнд тавьсан орон нутгийн багаар аялаарай.</p>" },
+      { "language": "zh", "title": "Let's Travel Mongolia", "content": "<h1 class='text-4xl font-bold'>Let's Travel Mongolia</h1><p class='mt-4 text-lg'>我们为您策划沉浸式的蒙古之旅，穿越无垠草原、壮丽沙漠与雪山。从戈壁的火焰崖到北方的驯鹿牧民，每条行程都围绕真实的游牧文化与原始自然体验打造。</p><p class='mt-4'>与注重可持续、安全与真诚款待的本地团队同行。</p>" },
+      { "language": "ru", "title": "Let's Travel Mongolia", "content": "<h1 class='text-4xl font-bold'>Let's Travel Mongolia</h1><p class='mt-4 text-lg'>Мы создаем погружающие путешествия по бескрайним степям, драматичным пустыням и заснеженным горам Монголии. От огненных скал Гоби до оленеводов севера — каждый маршрут строится вокруг подлинных встреч с кочевой культурой и нетронутой природой.</p><p class='mt-4'>Путешествуйте с местной командой, для которой важны устойчивость, безопасность и искреннее гостеприимство.</p>" },
+      { "language": "ko", "title": "Let's Travel Mongolia", "content": "<h1 class='text-4xl font-bold'>Let's Travel Mongolia</h1><p class='mt-4 text-lg'>몽골의 끝없는 초원, 웅장한 사막, 눈 덮인 산맥을 가로지르는 몰입형 여행을 기획합니다. 고비의 불타는 절벽에서 북방의 순록 유목민까지, 모든 일정은 진정한 유목 문화와 온전한 자연과의 만남을 중심으로 설계됩니다.</p><p class='mt-4'>지속가능성, 안전, 진심 어린 환대를 최우선으로 하는 현지 팀과 함께하세요.</p>" },
+      { "language": "ja", "title": "Let's Travel Mongolia", "content": "<h1 class='text-4xl font-bold'>Let's Travel Mongolia</h1><p class='mt-4 text-lg'>モンゴルの果てない大草原、壮大な砂漠、雪を頂く山脈を巡る没入型ツアーを企画します。ゴビの炎の崖から北のトナカイ遊牧民まで、すべての旅程は本物の遊牧文化と未開の自然との出会いを中心に構成されています。</p><p class='mt-4'>持続可能性、安全性、そして誠実なおもてなしを最優先する現地チームと共に旅しましょう。</p>" }
+    ]
+  },
+  {
+    "section": "about",
+    "name": "About Us",
+    "slug": "about",
+    "description": "A local Mongolian team with a passion for sharing our land, culture, and stories.",
+    "content": "<h1 class='text-4xl font-bold'>About Let's Travel Mongolia</h1><p class='mt-4 text-lg'>Founded by guides born on the steppe, our agency combines decades of local knowledge with modern travel standards. We believe the best journeys happen slowly: a cup of salty tea in a ger, a sunset over the Gobi, a conversation with a herder.</p><p class='mt-4'>Our mission is simple: connect curious travelers with the real Mongolia, while supporting the communities and landscapes that make it possible.</p><h2 class='text-2xl font-semibold mt-8'>Why travel with us?</h2><ul class='list-disc ml-6 mt-2'><li>Local guides from every region</li><li>Small groups and private departures</li><li>Sustainable travel practices</li><li>24/7 support on the ground</li></ul>",
+    "translations": [
+      { "language": "mn", "title": "Бидний тухай", "content": "<h1 class='text-4xl font-bold'>Бидний тухай</h1><p class='mt-4 text-lg'>Тал нутагт төрж өссөн хөтөчдөөр үүсгэн байгуулагдсан манай аgency орон нутгийн олон арван жилийн мэдлэгийг орчин үеийн аяллын стандартад нийцүүлдэг. Хамгийн гайхалтай аяллууд удаанаар эхэлдэг гэдэгт бид итгэдэг: гэрт давсан цай, Говийн нар жаргах, малчны яриа.</p><p class='mt-4'>Бидний зорилго: сониуч аялагчдыг жинхэнэ Монголтой холбох, энэ бүхнийг боломж болгодог нийгэмлэг, байгальд туслах.</p><h2 class='text-2xl font-semibold mt-8'>Яагаад бидэнтэй аялах вэ?</h2><ul class='list-disc ml-6 mt-2'><li>Бүс нутгийн орон нутгийн хөтөчид</li><li>Жижиг баг, хувийн аяллууд</li><li>Тогтвортой аяллын дадал</li><li>24/7 газар дээрх дэмжлэг</li></ul>" },
+      { "language": "zh", "title": "关于我们", "content": "<h1 class='text-4xl font-bold'>关于 Let's Travel Mongolia</h1><p class='mt-4 text-lg'>我们由出生在大草原的向导创立，将数十年的本地知识与现代化旅行标准相结合。我们相信最美好的旅行是缓慢的：在蒙古包里喝一杯咸奶茶，看戈壁日落，与牧民聊天。</p><p class='mt-4'>我们的使命很简单：让好奇的旅行者与真实的蒙古相遇，同时支持让这一切成为可能的社区与自然环境。</p><h2 class='text-2xl font-semibold mt-8'>为什么选择我们？</h2><ul class='list-disc ml-6 mt-2'><li>来自各地区的本地向导</li><li>小团与私人定制出发</li><li>可持续旅行实践</li><li>全天候当地支持</li></ul>" },
+      { "language": "ru", "title": "О нас", "content": "<h1 class='text-4xl font-bold'>О Let's Travel Mongolia</h1><p class='mt-4 text-lg'>Агентство основано гидами, родившимися в степи. Мы сочетаем десятилетия местных знаний с современными стандартами путешествий. Лучшие поездки проходят медленно: чашка соленого чая в юрте, закат над Гоби, разговор с пастухом.</p><p class='mt-4'>Наша миссия проста: соединять любопытных путешественников с настоящей Монголией, поддерживая сообщества и природу, которые это делают возможным.</p><h2 class='text-2xl font-semibold mt-8'>Почему с нами?</h2><ul class='list-disc ml-6 mt-2'><li>Местные гиды из каждого региона</li><li>Небольшие группы и частные туры</li><li>Устойчивый туризм</li><li>Поддержка 24/7 на месте</li></ul>" },
+      { "language": "ko", "title": "회사 소개", "content": "<h1 class='text-4xl font-bold'>Let's Travel Mongolia 소개</h1><p class='mt-4 text-lg'>초원에서 태어난 가이드들이 설립한 저희 여행사는 수십 년의 현지 지식과 현대적인 여행 기준을 결합합니다. 가장 좋은 여행은 느리게 이루어진다고 믿습니다: 게르에서 마신 짠 차, 고비 위 석양, 목민과의 대화.</p><p class='mt-4'>우리의 사명은 단순합니다. 호기심 많은 여행자들을 진정한 몽골과 연결하고, 이를 가능하게 하는 공동체와 자연을 지원하는 것입니다.</p><h2 class='text-2xl font-semibold mt-8'>왜 저희와 함께해야 할까요?</h2><ul class='list-disc ml-6 mt-2'><li>모든 지역 출신 현지 가이드</li><li>소규모 그룹 및 프라이빗 출발</li><li>지속 가능한 여행 관행</li><li>현지 24/7 지원</li></ul>" },
+      { "language": "ja", "title": "私たちについて", "content": "<h1 class='text-4xl font-bold'>Let's Travel Mongolia について</h1><p class='mt-4 text-lg'>大草原で生まれ育ったガイドたちによって設立された当社は、何十年もの現地知識と現代的な旅行基準を融合させています。最高の旅はゆっくりと進むものだと私たちは信じています。ゲルでの塩奶茶、ゴビの夕日、遊牧民との会話。</p><p class='mt-4'>私たちの使命はシンプルです。好奇心旺盛な旅行者を本物のモンゴルとつなぎ、それを可能にする地域社会と自然を支えること。</p><h2 class='text-2xl font-semibold mt-8'>なぜ私たちと旅するのか</h2><ul class='list-disc ml-6 mt-2'><li>各地域出身の現地ガイド</li><li>小グループとプライベート出発</li><li>持続可能な旅行の実践</li><li>現地での24時間サポート</li></ul>" }
+    ]
+  },
+  {
+    "section": "services",
+    "name": "Tours & Services",
+    "slug": "services",
+    "description": "Curated group tours, private journeys, and custom itineraries across Mongolia.",
+    "content": "<h1 class='text-4xl font-bold'>Our Tours & Services</h1><p class='mt-4 text-lg'>From classic Gobi expeditions to off-the-map horseback treks, we offer a range of journeys for every kind of traveler. Choose a scheduled small-group departure or ask us to build a private trip around your dates and interests.</p><h2 class='text-2xl font-semibold mt-8'>What we offer</h2><ul class='list-disc ml-6 mt-2'><li>Small-group scheduled tours</li><li>Private custom itineraries</li><li>Photography and wildlife trips</li><li>Cultural and festival experiences</li><li>Corporate retreats and incentives</li></ul><p class='mt-4'>Every trip includes experienced drivers, local guides, comfortable ger camps, and meals that celebrate Mongolian flavors.</p>",
+    "translations": [
+      { "language": "mn", "title": "Аялал үйлчилгээ", "content": "<h1 class='text-4xl font-bold'>Манай аялал, үйлчилгээ</h1><p class='mt-4 text-lg'>Уламжлалт Говийн экспедициээс эхлээд газрын зурагт байхгүй морин аялал хүртэл бид бүх төрлийн аялагчдад зориулсан аяллуудыг санал болгодог. Хуваарьт жижиг багийн аяллаас эхлээд өөрийн өдөр, сонирхлоор бүтээсэн хувийн аяллыг биднээс асууна уу.</p><h2 class='text-2xl font-semibold mt-8'>Бид юу санал болгодог вэ?</h2><ul class='list-disc ml-6 mt-2'><li>Хуваарьт жижиг багийн аяллууд</li><li>Хувийн тохируулсан маршрут</li><li>Гэрэл зураг, ан амьтны аяллууд</li><li>Соёл, баяр наадмын туршлага</li><li>Корпоратив амралт, урамшуулал</li></ul><p class='mt-4'>Аялал бүр туршлагатай жолооч, орон нутгийн хөтөч, тохь тухтай гэр буудал, Монгол амтыг дээдлэсэн хоолоор хангагдсан.</p>" },
+      { "language": "zh", "title": "旅游与服务", "content": "<h1 class='text-4xl font-bold'>我们的旅游与服务</h1><p class='mt-4 text-lg'>从经典戈壁探险到地图之外的骑马穿越，我们为每一种旅行者提供丰富的行程。选择定期小团出发，或让我们根据您的日期与兴趣定制私人旅程。</p><h2 class='text-2xl font-semibold mt-8'>我们提供什么</h2><ul class='list-disc ml-6 mt-2'><li>定期小团游</li><li>私人定制行程</li><li>摄影与野生动物之旅</li><li>文化与节庆体验</li><li>企业团建与奖励旅游</li></ul><p class='mt-4'>每次旅行都配备经验丰富的司机、本地向导、舒适的蒙古包营地，以及展现蒙古风味的美食。</p>" },
+      { "language": "ru", "title": "Туры и услуги", "content": "<h1 class='text-4xl font-bold'>Наши туры и услуги</h1><p class='mt-4 text-lg'>От классических экспедиций в Гоби до конных походов вне карт — мы предлагаем путешествия для каждого типа путешественников. Выберите групповой тур по расписанию или попросите нас составить частную программу под ваши даты и интересы.</p><h2 class='text-2xl font-semibold mt-8'>Что мы предлагаем</h2><ul class='list-disc ml-6 mt-2'><li>Групповые туры по расписанию</li><li>Индивидуальные маршруты</li><li>Фото- и wildlife-туры</li><li>Культурные и фестивальные программы</li><li>Корпоративные мероприятия</li></ul><p class='mt-4'>Каждая поездка включает опытных водителей, местных гидов, комфортабельные гэр-кемпинги и блюда монгольской кухни.</p>" },
+      { "language": "ko", "title": "투어 및 서비스", "content": "<h1 class='text-4xl font-bold'>투어 및 서비스</h1><p class='mt-4 text-lg'>클ásico 고비 탐험부터 지도에 없는 말 트레킹까지, 모든 여행자를 위한 다양한 여행을 제공합니다. 정기 소그룹 출발을 선택하거나, 원하는 날짜와 관심사에 맞춘 프라이빗 여행을 맞춤 제작해 드립니다.</p><h2 class='text-2xl font-semibold mt-8'>제공 서비스</h2><ul class='list-disc ml-6 mt-2'><li>정기 소그룹 투어</li><li>맞춤형 프라이빗 일정</li><li>사진 및 야생동물 여행</li><li>문화 및 축제 체험</li><li>기업 워크숍 및 인센티브</li></ul><p class='mt-4'>모든 여행에는 경험 많은 기사, 현지 가이드, 편안한 게르 캠프, 몽골의 맛을 살린 식사가 포함됩니다.</p>" },
+      { "language": "ja", "title": "ツアーとサービス", "content": "<h1 class='text-4xl font-bold'>ツアーとサービス</h1><p class='mt-4 text-lg'>定番のゴビ探検から地図にない乗馬トレッキングまで、あらゆるタイプの旅行者向けの旅をご用意しています。定期小グループツアーを選ぶか、ご希望の日程と興味に合わせたプライベート旅行をお問い合わせください。</p><h2 class='text-2xl font-semibold mt-8'>提供内容</h2><ul class='list-disc ml-6 mt-2'><li>定期小グループツアー</li><li>カスタムプライベート旅程</li><li>写真・野生動物ツアー</li><li>文化・祭り体験</li><li>企業リトリート・インセンティブ</li></ul><p class='mt-4'>すべての旅に経験豊富なドライバー、現地ガイド、快適なゲルキャンプ、モンゴルの味わいを楽しめる食事が含まれます。</p>" }
+    ]
+  },
+  {
+    "section": "contact",
+    "name": "Contact",
+    "slug": "contact",
+    "description": "Get in touch to plan your Mongolia adventure.",
+    "content": "<h1 class='text-4xl font-bold'>Contact Us</h1><p class='mt-4 text-lg'>Ready to explore Mongolia? Send us a message and our team will reply within 24 hours with a tailored itinerary or answers to your questions.</p><p class='mt-4'>Email: hello@letstravel.mn<br>Phone: +976 9911 2233<br>Address: Ulaanbaatar, Mongolia</p>",
+    "translations": [
+      { "language": "mn", "title": "Холбоо барих", "content": "<h1 class='text-4xl font-bold'>Холбоо барих</h1><p class='mt-4 text-lg'>Монголыг нээхэд бэлэн үү? Бидэнд мессеж илгээгээрэй, манай баг 24 цагийн дотор хариу барьж, танд тохируулсан маршрут эсвэл асуултын хариултыг өгнө.</p><p class='mt-4'>Имэйл: hello@letstravel.mn<br>Утас: +976 9911 2233<br>Хаяг: Улаанбаатар, Монгол</p>" },
+      { "language": "zh", "title": "联系我们", "content": "<h1 class='text-4xl font-bold'>联系我们</h1><p class='mt-4 text-lg'>准备好探索蒙古了吗？给我们留言，团队将在24小时内回复，提供定制行程或解答您的问题。</p><p class='mt-4'>邮箱：hello@letstravel.mn<br>电话：+976 9911 2233<br>地址：蒙古国乌兰巴托</p>" },
+      { "language": "ru", "title": "Контакты", "content": "<h1 class='text-4xl font-bold'>Контакты</h1><p class='mt-4 text-lg'>Готовы исследовать Монголию? Напишите нам, и наша команда ответит в течение 24 часов с подобранным маршрутом или ответами на вопросы.</p><p class='mt-4'>Email: hello@letstravel.mn<br>Телефон: +976 9911 2233<br>Адрес: Улан-Батор, Монголия</p>" },
+      { "language": "ko", "title": "문의하기", "content": "<h1 class='text-4xl font-bold'>문의하기</h1><p class='mt-4 text-lg'>몽골 여행을 준비하셨나요? 메시지를 별내주시면 24시간 이내에 맞춤 일정 또는 질문에 대한 답변을 드리겠습니다.</p><p class='mt-4'>이메일: hello@letstravel.mn<br>전화: +976 9911 2233<br>주소: 울란바토르, 몽골</p>" },
+      { "language": "ja", "title": "お問い合わせ", "content": "<h1 class='text-4xl font-bold'>お問い合わせ</h1><p class='mt-4 text-lg'>モンゴル探検の準備はできましたか？メッセージをお送りください。24時間以内に、オーダーメイドの旅程やご質問への回答をお届けします。</p><p class='mt-4'>メール：hello@letstravel.mn<br>電話：+976 9911 2233<br>住所：ウランバートル、モンゴル</p>" }
+    ]
+  },
+  {
+    "section": "blog",
+    "name": "Blog",
+    "slug": "blog",
+    "description": "Travel stories, guides, and inspiration from Mongolia.",
+    "content": "<h1 class='text-4xl font-bold'>Travel Journal</h1><p class='mt-4 text-lg'>Stories from the road, packing tips, festival calendars, and behind-the-scenes moments from our guides.</p>",
+    "translations": [
+      { "language": "mn", "title": "Блог", "content": "<h1 class='text-4xl font-bold'>Аяллын тэмдэглэл</h1><p class='mt-4 text-lg'>Замын түүхүүд, аяллын зөвлөмж, баяр наадмын хуанли, манай хөтөчдийн өнцгөөс авсан дүр зургүүд.</p>" },
+      { "language": "zh", "title": "博客", "content": "<h1 class='text-4xl font-bold'>旅行日志</h1><p class='mt-4 text-lg'>路上的故事、打包建议、节日日历，以及来自导游的幕后瞬间。</p>" },
+      { "language": "ru", "title": "Блог", "content": "<h1 class='text-4xl font-bold'>Дневник путешествий</h1><p class='mt-4 text-lg'>Истории с дороги, советы по сбору, календари фестивалей и закулисные моменты от наших гидов.</p>" },
+      { "language": "ko", "title": "블로그", "content": "<h1 class='text-4xl font-bold'>여행 일지</h1><p class='mt-4 text-lg'>길 위의 이야기, 짐 싸기 팁, 축제 캘린더, 가이드들의 비하인드 스토리.</p>" },
+      { "language": "ja", "title": "ブログ", "content": "<h1 class='text-4xl font-bold'>トラベルジャーナル</h1><p class='mt-4 text-lg'>道の上の物語、荷造りのヒント、祭りカレンダー、ガイドからの舞台裏の瞬間。</p>" }
+    ]
+  },
+  {
+    "section": "faq",
+    "name": "FAQ",
+    "slug": "faq",
+    "description": "Answers to common questions about traveling in Mongolia.",
+    "content": "<h1 class='text-4xl font-bold'>Frequently Asked Questions</h1><h2 class='text-xl font-semibold mt-6'>When is the best time to visit?</h2><p class='mt-2'>June to September offers the warmest weather and the Naadam festival. Winter tours are possible for hardy travelers.</p><h2 class='text-xl font-semibold mt-6'>Do I need a visa?</h2><p class='mt-2'>Many nationalities can visit visa-free for up to 90 days. Check the latest rules before departure.</p><h2 class='text-xl font-semibold mt-6'>What should I pack?</h2><p class='mt-2'>Layers, sun protection, a refillable water bottle, and a sense of adventure.</p>",
+    "translations": [
+      { "language": "mn", "title": "Түгээмэл асуулт", "content": "<h1 class='text-4xl font-bold'>Түгээмэл асуултууд</h1><h2 class='text-xl font-semibold mt-6'>Хэзээ аялах хамгийн тохиромжтой вэ?</h2><p class='mt-2'>6-9 дүгээр сард дулаахан, Наадам болдог. Өвлийн аялал хүйтэнд тэсвэртэй аялагчдад боломжтой.</p><h2 class='text-xl font-semibold mt-6'>Виз хэрэгтэй юу?</h2><p class='mt-2'>Олон улсын иргэд 90 хүртэл хоног визгүй зорчдог. Явахаасаа өмнө дүрмийг шалгана уу.</p><h2 class='text-xl font-semibold mt-6'>Юу авч явах вэ?</h2><p class='mt-2'>Давхар хувцас, нарнаас хамгаалах, усны сав, адал явдлын сэтгэл.</p>" },
+      { "language": "zh", "title": "常见问题", "content": "<h1 class='text-4xl font-bold'>常见问题</h1><h2 class='text-xl font-semibold mt-6'>最佳旅行时间？</h2><p class='mt-2'>6月至9月天气最温暖，也是那达慕节期间。冬季旅行适合耐寒的旅行者。</p><h2 class='text-xl font-semibold mt-6'>需要签证吗？</h2><p class='mt-2'>许多国籍可免签停留最多90天。出发前请查询最新规定。</p><h2 class='text-xl font-semibold mt-6'>应该带什么？</h2><p class='mt-2'>分层衣物、防晒用品、可重复使用的水瓶，以及冒险精神。</p>" },
+      { "language": "ru", "title": "FAQ", "content": "<h1 class='text-4xl font-bold'>Частые вопросы</h1><h2 class='text-xl font-semibold mt-6'>Когда лучше ехать?</h2><p class='mt-2'>С июня по сентябрь теплая погода и фестиваль Надам. Зимние туры подойдут устойчивым к холоду путешественникам.</p><h2 class='text-xl font-semibold mt-6'>Нужна ли виза?</h2><p class='mt-2'>Многие граждане могут посещать без визы до 90 дней. Уточняйте правила перед вылетом.</p><h2 class='text-xl font-semibold mt-6'>Что взять с собой?</h2><p class='mt-2'>Слои одежды, защита от солнца, многоразовая бутылка и дух приключений.</p>" },
+      { "language": "ko", "title": "자주 묻는 질문", "content": "<h1 class='text-4xl font-bold'>자주 묻는 질문</h1><h2 class='text-xl font-semibold mt-6'>가장 좋은 여행 시기는?</h2><p class='mt-2'>6월에서 9월 사이가 가장 따뜻하고 나담 축제 기간입니다. 겨울 여행은 추위에 강한 여행자에게 가능합니다.</p><h2 class='text-xl font-semibold mt-6'>비자가 필요한가요?</h2><p class='mt-2'>많은 국적이 최대 90일 비자 없이 방문할 수 있습니다. 출발 전 최신 규정을 확인하세요.</p><h2 class='text-xl font-semibold mt-6'>무엇을 챙겨야 하나요?</h2><p class='mt-2'>겹쳐 입는 옷, 자외선 차단, 재사용 물병, 모험심.</p>" },
+      { "language": "ja", "title": "よくある質問", "content": "<h1 class='text-4xl font-bold'>よくある質問</h1><h2 class='text-xl font-semibold mt-6'>最適な旅行時期は？</h2><p class='mt-2'>6月から9月が最も暖かく、ナーダム祭の季節でもあります。冬のツアーは寒さに強い旅行者向けです。</p><h2 class='text-xl font-semibold mt-6'>ビザは必要ですか？</h2><p class='mt-2'>多くの国籍が最大90日間ビザなしで入国できます。出発前に最新規則をご確認ください。</p><h2 class='text-xl font-semibold mt-6'>何を持っていけばいい？</h2><p class='mt-2'>重ね着、日焼け止め、再利用可能な水筒、そして冒険心。</p>" }
+    ]
+  },
+  {
+    "section": "privacy",
+    "name": "Privacy Policy",
+    "slug": "privacy",
+    "description": "How we handle your personal information.",
+    "content": "<h1 class='text-4xl font-bold'>Privacy Policy</h1><p class='mt-4'>Let's Travel Mongolia respects your privacy. We collect only the information needed to book and support your trip. We do not sell personal data to third parties.</p><p class='mt-4'>By using our site and inquiry forms, you agree to this policy. Contact us with any questions.</p>",
+    "translations": [
+      { "language": "mn", "title": "Нууцлалын бодлого", "content": "<h1 class='text-4xl font-bold'>Нууцлалын бодлого</h1><p class='mt-4'>Let's Travel Mongolia таны нууцлалыг хүндэтгэдэг. Бид аялал захиалах, дэмжлэг үзүүлэхэд шаардлагатай мэдээллийг л цуглуулдаг. Хувийн мэдээллийг гуравдагч этгээдэд зарахгүй.</p>" },
+      { "language": "zh", "title": "隐私政策", "content": "<h1 class='text-4xl font-bold'>隐私政策</h1><p class='mt-4'>Let's Travel Mongolia 尊重您的隐私。我们仅收集预订和支持旅行所需的信息。我们不会向第三方出售个人数据。</p>" },
+      { "language": "ru", "title": "Политика конфиденциальности", "content": "<h1 class='text-4xl font-bold'>Политика конфиденциальности</h1><p class='mt-4'>Let's Travel Mongolia уважает вашу конфиденциальность. Мы собираем только данные, необходимые для бронирования и поддержки поездки. Личные данные не передаются третьим лицам.</p>" },
+      { "language": "ko", "title": "개인정보 처리방침", "content": "<h1 class='text-4xl font-bold'>개인정보 처리방침</h1><p class='mt-4'>Let's Travel Mongolia은 고객의 개인정보를 존중합니다. 여행 예약 및 지원에 필요한 정보만 수집하며, 제3자에게 개인정보를 판매하지 않습니다.</p>" },
+      { "language": "ja", "title": "プライバシーポリシー", "content": "<h1 class='text-4xl font-bold'>プライバシーポリシー</h1><p class='mt-4'>Let's Travel Mongolia はお客様のプライバシーを尊重します。旅行の予約とサポートに必要な情報のみを収集し、個人情報を第三者に販売することはありません。</p>" }
+    ]
+  }
+]
