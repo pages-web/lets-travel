@@ -6,22 +6,22 @@ import Image from "@/components/common/Image";
 
 const posts = [
   {
-    slug: "best-time-to-visit-mongolia",
-    title: "Best time to visit Mongolia",
-    excerpt: "A month-by-month guide to weather, festivals, and wildlife.",
-    image: "/images/blog-time.jpg",
-  },
-  {
-    slug: "what-to-pack-for-the-gobi",
-    title: "What to pack for the Gobi",
+    slug: "how-to-pack-for-mongolia",
+    title: "How to Pack for Mongolia",
     excerpt: "Practical gear advice from guides who have crossed every dune.",
     image: "/images/blog-pack.jpg",
   },
   {
-    slug: "mongolian-culture-guide",
-    title: "Mongolian culture guide",
-    excerpt: "Customs, greetings, and etiquette for respectful travel.",
-    image: "/images/blog-culture.jpg",
+    slug: "top-mongolian-dishes",
+    title: "Top 5 Mongolian Dishes to Try",
+    excerpt: "From buuz to airag, discover the flavors that fuel nomadic life.",
+    image: "/images/blog-food.jpg",
+  },
+  {
+    slug: "gobi-desert-expedition",
+    title: "Gobi Desert Expedition",
+    excerpt: "Eight days across the Gobi's flaming cliffs, singing dunes, and hidden canyons.",
+    image: "/images/tour-gobi.jpg",
   },
 ];
 
