@@ -66,9 +66,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const post: Post | null = typedData?.cpPost ?? null;
   if (!post) notFound();
 
+  const imageUrl = post.thumbnail?.url
+    ? `/images/${post.slug}.jpg`
+    : `/images/blog-header.jpg`;
+
   return (
     <article className="bg-background pb-20">
-      <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-5xl overflow-hidden px-4 pt-16 sm:px-6 lg:px-8">
+        <div className="relative aspect-[21/9] overflow-hidden rounded-2xl bg-muted">
+          <Image
+            src={imageUrl}
+            alt={post.title ?? ""}
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-3xl px-4 pt-12 text-center sm:px-6 lg:px-8">
         <span className="text-sm font-bold tracking-[0.2em] text-primary">TRAVEL GUIDE</span>
         <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
           {post.title}
@@ -83,20 +99,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </p>
         )}
       </div>
-
-      {post.thumbnail?.url && (
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="relative aspect-[21/9] overflow-hidden rounded-2xl bg-muted">
-            <Image
-              src={post.thumbnail.url}
-              alt={post.title ?? ""}
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-        </div>
-      )}
 
       <div className="mx-auto max-w-3xl px-4 pt-12 sm:px-6 lg:px-8">
         <div

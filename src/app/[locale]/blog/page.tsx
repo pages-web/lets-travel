@@ -34,6 +34,7 @@ export default async function BlogPage({
         label="JOURNAL"
         title="Travel tips, stories, and guides"
         subtitle="Practical advice and inspiration for your Mongolia adventure."
+        image="/images/blog-header.jpg"
       />
       <section className="bg-background py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

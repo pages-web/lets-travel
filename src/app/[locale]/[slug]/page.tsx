@@ -8,10 +8,20 @@ import type { Page } from "@/graphql/cms/queries/page";
 import type { Post } from "@/graphql/cms/queries/post";
 import TourCard from "@/components/sections/TourCard";
 import BlogCard from "@/components/sections/BlogCard";
+import PageHeader from "@/components/sections/PageHeader";
 
 interface CmsPageProps {
   params: Promise<{ locale: string; slug: string }>;
 }
+
+const pageHeaderImages: Record<string, string> = {
+  about: "/images/about-team.jpg",
+  contact: "/images/contact-landscape.jpg",
+  services: "/images/tours-header.jpg",
+  blog: "/images/blog-header.jpg",
+  faq: "/images/blog-header.jpg",
+  privacy: "/images/contact-landscape.jpg",
+};
 
 export async function generateMetadata({ params }: CmsPageProps): Promise<Metadata> {
   const { locale, slug } = await params;
@@ -81,14 +91,12 @@ export default async function CmsPage({ params }: CmsPageProps) {
 
   return (
     <article className="bg-background pb-20">
-      <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-          {page.name}
-        </h1>
-        {page.description && (
-          <p className="mt-4 text-lg text-muted-foreground">{page.description}</p>
-        )}
-      </div>
+      <PageHeader
+        label={slug.toUpperCase()}
+        title={page.name ?? slug}
+        subtitle={page.description ?? undefined}
+        image={pageHeaderImages[slug]}
+      />
 
       {page.content && (
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">

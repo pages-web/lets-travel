@@ -50,6 +50,7 @@ export default async function ToursPage({
           label="OUR TOURS"
           title="Handcrafted journeys across Mongolia"
           subtitle="Filter by duration, activity, or theme and find the trip that matches your spirit of adventure."
+          image="/images/tours-header.jpg"
         />
         <section className="py-20 text-center">
           <p className="text-muted-foreground">No tours available yet.</p>
@@ -64,6 +65,7 @@ export default async function ToursPage({
         label="OUR TOURS"
         title={toursPage?.name || "Handcrafted journeys across Mongolia"}
         subtitle={toursPage?.description || "Find the trip that matches your spirit of adventure."}
+        image="/images/tours-header.jpg"
       />
       <section className="bg-background py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

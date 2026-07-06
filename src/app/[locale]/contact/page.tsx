@@ -33,6 +33,7 @@ export default async function ContactPage({
         label="CONTACT"
         title={contactPage?.name || "Start the conversation"}
         subtitle={contactPage?.description || "Send an inquiry or request a tailor-made itinerary."}
+        image="/images/contact-landscape.jpg"
       />
 
       <section className="bg-background py-20">

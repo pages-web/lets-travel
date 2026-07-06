@@ -33,6 +33,7 @@ export default async function AboutPage({
         label="ABOUT US"
         title={aboutPage?.name || "Mongolia's most trusted travel partner"}
         subtitle={aboutPage?.description || "Local expertise and global standards since 2008."}
+        image="/images/about-team.jpg"
       />
 
       <section className="bg-background py-20">
