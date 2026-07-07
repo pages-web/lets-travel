@@ -126,7 +126,7 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
             <section className="rounded-2xl bg-card p-8 shadow-sm">
               <div className="mb-6 flex items-center gap-2">
                 <CalendarDays className="h-6 w-6 text-primary" />
-                <h2 className="text-2xl font-bold text-foreground">Itinerary</h2>
+                <h2 className="text-2xl font-bold text-foreground">Day-by-day itinerary</h2>
               </div>
               <div className="relative space-y-0">
                 <div className="absolute left-[19px] top-3 bottom-3 w-px bg-border" />
