@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getServerApolloClient } from "@/lib/apollo/server-client";
-import { CP_POST, CP_POSTS } from "@/graphql/cms/queries/post";
+import { CP_POST } from "@/graphql/cms/queries/post";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/routing";
@@ -15,19 +15,23 @@ interface TourDetailPageProps {
 }
 
 export async function generateMetadata({ params }: TourDetailPageProps): Promise<Metadata> {
-  const { locale, slug } = await params;
+  const { slug } = await params;
+  const tour = getTourBySlug(slug);
+  if (!tour) return {};
+
   const client = await getServerApolloClient(false);
   const { data } = await client.query({
     query: CP_POST,
-    variables: { slug, language: locale },
+    variables: { slug, language: (await params).locale },
     context: { fetchOptions: { next: { revalidate: 60 } } },
-  });
+  }).catch(() => ({ data: undefined }));
+
   const typedData = data as { cpPost?: Post | null } | undefined;
   const post: Post | null = typedData?.cpPost ?? null;
-  if (!post) return {};
+
   return {
-    title: `${post.title} | Let's Travel Mongolia`,
-    description: post.excerpt ?? undefined,
+    title: `${post?.title ?? tour.title} | Let's Travel Mongolia`,
+    description: post?.excerpt ?? tour.excerpt ?? undefined,
   };
 }
 
@@ -39,28 +43,18 @@ export async function generateStaticParams() {
 
 export default async function TourDetailPage({ params }: TourDetailPageProps) {
   const { locale, slug } = await params;
+  const tour = getTourBySlug(slug);
+  if (!tour) notFound();
+
   const client = await getServerApolloClient(false);
   const { data } = await client.query({
     query: CP_POST,
     variables: { slug, language: locale },
     context: { fetchOptions: { next: { revalidate: 60 } } },
-  });
+  }).catch(() => ({ data: undefined }));
 
   const typedData = data as { cpPost?: Post | null } | undefined;
   const post: Post | null = typedData?.cpPost ?? null;
-  if (!post) notFound();
-
-  const tour = getTourBySlug(slug);
-  const meta = tour ?? {
-    slug,
-    title: post.title ?? "",
-    duration: 7,
-    basePrice: 1500,
-    image: post.thumbnail?.url ?? "/images/tours-header.jpg",
-    excerpt: post.excerpt ?? "",
-    highlights: [],
-    itinerary: [],
-  };
 
   const inclusions = [
     "Local English-speaking guide",
@@ -75,8 +69,8 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
     <article className="bg-background pb-20">
       <div className="relative h-[420px] w-full overflow-hidden sm:h-[520px] lg:h-[620px]">
         <Image
-          src={meta.image}
-          alt={post.title ?? ""}
+          src={tour.image}
+          alt={post?.title ?? tour.title}
           fill
           className="object-cover"
           priority
@@ -86,10 +80,10 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
           <div className="mx-auto max-w-7xl">
             <span className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-1.5 text-sm font-bold text-primary-foreground shadow-lg">
               <Clock className="h-4 w-4" />
-              {meta.duration} DAYS • FROM ${meta.basePrice.toLocaleString()}
+              {tour.duration} DAYS • FROM ${tour.basePrice.toLocaleString()}
             </span>
             <h1 className="mt-4 max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              {post.title}
+              {post?.title ?? tour.title}
             </h1>
           </div>
         </div>
@@ -99,8 +93,8 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
         <div className="space-y-10">
           <section className="rounded-2xl bg-card p-8 shadow-sm">
             <h2 className="text-2xl font-bold text-foreground">Overview</h2>
-            <p className="mt-4 leading-relaxed text-muted-foreground">{post.excerpt || meta.excerpt}</p>
-            {post.content && (
+            <p className="mt-4 leading-relaxed text-muted-foreground">{post?.excerpt || tour.excerpt}</p>
+            {post?.content && (
               <div
                 className="prose prose-lg mt-6 max-w-none text-foreground"
                 dangerouslySetInnerHTML={{ __html: post.content }}
@@ -108,11 +102,11 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
             )}
           </section>
 
-          {meta.highlights.length > 0 && (
+          {tour.highlights.length > 0 && (
             <section className="rounded-2xl bg-card p-8 shadow-sm">
               <h2 className="text-2xl font-bold text-foreground">Highlights</h2>
               <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-                {meta.highlights.map((highlight) => (
+                {tour.highlights.map((highlight) => (
                   <li key={highlight} className="flex items-start gap-3 text-muted-foreground">
                     <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                     {highlight}
@@ -122,7 +116,7 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
             </section>
           )}
 
-          {meta.itinerary.length > 0 && (
+          {tour.itinerary.length > 0 && (
             <section className="rounded-2xl bg-card p-8 shadow-sm">
               <div className="mb-6 flex items-center gap-2">
                 <CalendarDays className="h-6 w-6 text-primary" />
@@ -130,7 +124,7 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
               </div>
               <div className="relative space-y-0">
                 <div className="absolute left-[19px] top-3 bottom-3 w-px bg-border" />
-                {meta.itinerary.map((day) => (
+                {tour.itinerary.map((day) => (
                   <div key={day.day} className="relative flex gap-5 pb-8 last:pb-0">
                     <div className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">
                       {day.day}
@@ -159,7 +153,7 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
         </div>
 
         <aside className="space-y-6 lg:sticky lg:top-28 lg:self-start">
-          <TourBookingForm slug={slug} title={post.title ?? ""} basePrice={meta.basePrice} />
+          <TourBookingForm slug={slug} title={post?.title ?? tour.title} basePrice={tour.basePrice} />
 
           <div className="rounded-2xl bg-card p-6 shadow-sm">
             <h3 className="text-lg font-bold text-foreground">Need help?</h3>
