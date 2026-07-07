@@ -64,7 +64,7 @@ export function LanguageSwitcher({ locales }: { locales: readonly string[] }) {
         type="button"
         disabled={isPending}
         onClick={() => setOpen((prev) => !prev)}
-        className="flex items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted disabled:opacity-50"
+        className="flex items-center gap-2 rounded-full border border-border bg-background px-3.5 py-2 text-sm font-medium text-foreground transition-all hover:bg-muted hover:shadow-sm disabled:opacity-50"
         aria-expanded={open}
         aria-haspopup="listbox"
       >
@@ -77,7 +77,7 @@ export function LanguageSwitcher({ locales }: { locales: readonly string[] }) {
 
       {open && (
         <ul
-          className="absolute right-0 z-50 mt-2 w-40 overflow-hidden rounded-md border border-border bg-background shadow-lg"
+          className="absolute right-0 z-50 mt-2 w-44 overflow-hidden rounded-xl border border-border bg-card p-1 shadow-xl"
           role="listbox"
         >
           {locales.map((l) => (
@@ -85,7 +85,7 @@ export function LanguageSwitcher({ locales }: { locales: readonly string[] }) {
               <button
                 type="button"
                 onClick={() => switchLanguage(l)}
-                className={`flex w-full items-center gap-2 px-3 py-2 text-left text-sm transition-colors hover:bg-muted ${l === locale ? "bg-muted font-medium" : "text-foreground"}`}
+                className={`flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-left text-sm transition-colors hover:bg-muted ${l === locale ? "bg-muted font-semibold" : "text-foreground"}`}
               >
                 <span>{FLAGS[l]}</span>
                 <span>{LABELS[l]}</span>

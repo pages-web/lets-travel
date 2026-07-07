@@ -5,6 +5,7 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 import { AuthButton } from "./AuthButton";
 import { MobileMenu } from "./MobileMenu";
 import { routing } from "@/i18n/routing";
+import { Mountain } from "lucide-react";
 import type { MenuItem } from "@/graphql/cms/queries/menu";
 
 interface HeaderProps {
@@ -43,33 +44,37 @@ export default async function Header({ locale }: HeaderProps) {
         }));
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/90 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="text-xl font-extrabold tracking-tight text-foreground"
+          className="group flex items-center gap-2.5 text-xl font-bold tracking-tight text-foreground"
         >
-          LET&apos;S TRAVEL
+          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm transition-transform group-hover:scale-105">
+            <Mountain className="h-5 w-5" strokeWidth={2.5} />
+          </span>
+          <span className="hidden sm:inline">LET&apos;S TRAVEL</span>
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-1 md:flex">
           {items.map((item) => (
             <Link
               key={item._id}
               href={item.url || "/"}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="group relative px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               {item.label}
+              <span className="absolute inset-x-4 -bottom-0.5 h-0.5 scale-x-0 rounded-full bg-primary transition-transform duration-200 group-hover:scale-x-100" />
             </Link>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-6 md:flex">
+        <div className="hidden items-center gap-4 md:flex">
           <LanguageSwitcher locales={routing.locales} />
           <AuthButton />
           <Link
             href="/contact"
-            className="rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+            className="rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-md hover:-translate-y-0.5"
           >
             Plan My Trip
           </Link>

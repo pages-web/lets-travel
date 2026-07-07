@@ -12,14 +12,14 @@ export default function TrustBar() {
   ];
 
   return (
-    <section className="bg-card py-10">
+    <section className="border-y border-border/60 bg-card py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-8 divide-x divide-border/60 md:grid-cols-4">
           {stats.map((stat, index) => (
             <FadeIn key={stat.label} direction="up" delay={index * 0.05}>
-              <div className="flex flex-col items-center text-center">
-                <span className="text-4xl font-extrabold text-foreground">{stat.value}</span>
-                <span className="mt-1 text-sm text-muted-foreground">{stat.label}</span>
+              <div className="flex flex-col items-center text-center px-4">
+                <span className="text-4xl font-bold text-foreground">{stat.value}</span>
+                <span className="mt-1 text-sm font-medium text-muted-foreground">{stat.label}</span>
               </div>
             </FadeIn>
           ))}

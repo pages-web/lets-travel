@@ -24,7 +24,9 @@
     "eyebrow": "FEATURED TOURS",
     "title": "Journeys crafted for explorers",
     "days": "days",
-    "from": "From"
+    "from": "From",
+    "viewAll": "View all tours",
+    "explore": "Explore"
   },
   "usp": {
     "eyebrow": "WHY TRAVEL WITH US",
@@ -50,9 +52,12 @@
   },
   "blog": {
     "eyebrow": "FROM THE JOURNAL",
-    "title": "Travel tips & stories"
+    "title": "Travel tips & stories",
+    "viewAll": "View all stories",
+    "readMore": "Read more"
   },
   "cta": {
+    "eyebrow": "START YOUR JOURNEY",
     "title": "Start Your Mongolian Adventure",
     "subtitle": "Tell us what moves you. We'll craft the journey.",
     "button": "Plan My Trip"
