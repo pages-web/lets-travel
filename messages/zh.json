@@ -2,7 +2,7 @@
   "nav": { "home": "首页", "tours": "旅游", "about": "关于我们", "blog": "博客", "contact": "联系我们", "planMyTrip": "规划旅程" },
   "hero": { "eyebrow": "蒙古在等待", "title": "永生难忘的冒险", "subtitle": "穿越戈壁、草原和游牧腹地的精心策划之旅。", "exploreTours": "探索旅游", "tailorMade": "定制旅程" },
   "trust": { "years": "从业年限", "travelers": "满意旅客", "rating": "平均评分", "experts": "本地专家" },
-  "tours": { "eyebrow": "精选旅游", "title": "为探险者打造的旅程", "days": "天", "from": "起价", "viewAll": "查看全部旅游", "explore": "探索" },
+  "tours": { "eyebrow": "精选旅游", "title": "为探险者打造的旅程", "days": "天", "from": "起价", "viewAll": "查看全部旅游", "explore": "探索", "viewTour": "查看旅游" },
   "usp": { "eyebrow": "为什么选择我们", "title": "本地专业，国际标准", "localGuides": "本地导游", "localGuidesDesc": "我们的导游在蒙古出生长大，能带您领略只有本地人才知道的地方。", "tailorMade": "量身定制", "tailorMadeDesc": "每次旅行都根据您的日期、兴趣和风格量身定制。", "sustainable": "可持续旅行", "sustainableDesc": "我们支持当地社区并保护我们热爱的风景。", "safety": "安全第一", "safetyDesc": "全天候支持、审核过的司机和医疗后备。" },
   "story": { "eyebrow": "蒙古之魂", "title": "重塑您尺度感的风光", "body": "从无尽的草原到火焰悬崖，从游牧毡房到星光璀璨的戈壁之夜——蒙古不是一个您 visiting 的地方。它是一个改变您世界观的地方。", "cta": "阅读我们的故事" },
   "testimonials": { "eyebrow": "旅客故事", "title": "宾客怎么说" },

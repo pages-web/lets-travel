@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import type { Page } from "@/graphql/cms/queries/page";
 import type { Post } from "@/graphql/cms/queries/post";
 import TourCard from "@/components/sections/TourCard";
+import { TOURS } from "@/lib/data/tours";
 import BlogCard from "@/components/sections/BlogCard";
 import PageHeader from "@/components/sections/PageHeader";
 
@@ -112,11 +113,9 @@ export default async function CmsPage({ params }: CmsPageProps) {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <h2 className="mb-12 text-center text-3xl font-extrabold text-foreground">Featured Tours</h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {posts
-                .filter((p) => p.categories?.some((c) => c.slug === "tours" || c.slug === "services"))
-                .map((post) => (
-                  <TourCard key={post._id} post={post} />
-                ))}
+              {TOURS.map((tour) => (
+                <TourCard key={tour.slug} tour={tour} />
+              ))}
             </div>
           </div>
         </section>

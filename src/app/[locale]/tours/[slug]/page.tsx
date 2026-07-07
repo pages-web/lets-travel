@@ -6,61 +6,13 @@ import { notFound } from "next/navigation";
 import { Link } from "@/i18n/routing";
 import Image from "@/components/common/Image";
 import TourBookingForm from "@/components/sections/TourBookingForm";
+import { TOURS, getTourBySlug } from "@/lib/data/tours";
 import type { Post } from "@/graphql/cms/queries/post";
+import { CalendarDays, Clock, CheckCircle2 } from "lucide-react";
 
 interface TourDetailPageProps {
   params: Promise<{ locale: string; slug: string }>;
 }
-
-const tourMeta: Record<
-  string,
-  { duration: number; basePrice: number; image: string; highlights: string[] }
-> = {
-  "gobi-desert-expedition": {
-    duration: 8,
-    basePrice: 1890,
-    image: "/images/tour-gobi.jpg",
-    highlights: [
-      "Flaming Cliffs of Bayanzag",
-      "Singing dunes of Khongoryn Els",
-      "Ice-filled Yolyn Am canyon",
-      "Traditional ger camps under the stars",
-    ],
-  },
-  "northern-mongolia-horse-trek": {
-    duration: 10,
-    basePrice: 2450,
-    image: "/images/tour-khovsgol.jpg",
-    highlights: [
-      "Lake Khovsgol, the Blue Pearl",
-      "Taiga forest camping",
-      "Tsaatan reindeer herder visit",
-      "Small-group horseback riding",
-    ],
-  },
-  "naadam-festival-tour": {
-    duration: 7,
-    basePrice: 1650,
-    image: "/images/tour-naadam.jpg",
-    highlights: [
-      "Ulaanbaatar national Naadam",
-      "Rural provincial festival",
-      "Wrestling, horse racing, archery",
-      "July departure only",
-    ],
-  },
-  "mongolia-photography-safari": {
-    duration: 9,
-    basePrice: 2150,
-    image: "/images/tour-photo.jpg",
-    highlights: [
-      "Golden-hour landscape shoots",
-      "Wild horses and eagle encounters",
-      "Nomadic family portraits",
-      "Pro guide tips on light and composition",
-    ],
-  },
-};
 
 export async function generateMetadata({ params }: TourDetailPageProps): Promise<Metadata> {
   const { locale, slug } = await params;
@@ -80,22 +32,9 @@ export async function generateMetadata({ params }: TourDetailPageProps): Promise
 }
 
 export async function generateStaticParams() {
-  const client = await getServerApolloClient(false);
-  const results = await Promise.all(
-    routing.locales.map(async (locale) => {
-      const { data } = await client.query({
-        query: CP_POSTS,
-        variables: { language: locale, status: "published" as const, limit: 100 },
-        context: { fetchOptions: { next: { revalidate: 60 } } },
-      });
-      const typedData = data as { cpPosts?: Post[] } | undefined;
-      const posts: Post[] = typedData?.cpPosts ?? [];
-      return posts
-        .filter((p) => p.categories?.some((c) => c.slug === "tours" || c.slug === "services"))
-        .map((post) => ({ locale, slug: post.slug ?? "" }));
-    })
+  return routing.locales.flatMap((locale) =>
+    TOURS.map((tour) => ({ locale, slug: tour.slug }))
   );
-  return results.flat();
 }
 
 export default async function TourDetailPage({ params }: TourDetailPageProps) {
@@ -111,16 +50,30 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
   const post: Post | null = typedData?.cpPost ?? null;
   if (!post) notFound();
 
-  const meta = tourMeta[slug] ?? {
+  const tour = getTourBySlug(slug);
+  const meta = tour ?? {
+    slug,
+    title: post.title ?? "",
     duration: 7,
     basePrice: 1500,
     image: post.thumbnail?.url ?? "/images/tours-header.jpg",
+    excerpt: post.excerpt ?? "",
     highlights: [],
+    itinerary: [],
   };
+
+  const inclusions = [
+    "Local English-speaking guide",
+    "4WD vehicle with driver",
+    "Ger camp and tent accommodation",
+    "All meals during the tour",
+    "National park entrance fees",
+    "Airport transfers in Ulaanbaatar",
+  ];
 
   return (
     <article className="bg-background pb-20">
-      <div className="relative h-[420px] w-full overflow-hidden sm:h-[520px] lg:h-[600px]">
+      <div className="relative h-[420px] w-full overflow-hidden sm:h-[520px] lg:h-[620px]">
         <Image
           src={meta.image}
           alt={post.title ?? ""}
@@ -128,11 +81,14 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 px-4 pb-12 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <span className="text-sm font-bold tracking-[0.2em] text-primary">{meta.duration} DAYS • FROM ${meta.basePrice.toLocaleString()}</span>
-            <h1 className="mt-2 max-w-3xl text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <span className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-1.5 text-sm font-bold text-primary-foreground shadow-lg">
+              <Clock className="h-4 w-4" />
+              {meta.duration} DAYS • FROM ${meta.basePrice.toLocaleString()}
+            </span>
+            <h1 className="mt-4 max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               {post.title}
             </h1>
           </div>
@@ -143,7 +99,7 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
         <div className="space-y-10">
           <section className="rounded-2xl bg-card p-8 shadow-sm">
             <h2 className="text-2xl font-bold text-foreground">Overview</h2>
-            <p className="mt-4 leading-relaxed text-muted-foreground">{post.excerpt}</p>
+            <p className="mt-4 leading-relaxed text-muted-foreground">{post.excerpt || meta.excerpt}</p>
             {post.content && (
               <div
                 className="prose prose-lg mt-6 max-w-none text-foreground"
@@ -158,7 +114,7 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
               <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                 {meta.highlights.map((highlight) => (
                   <li key={highlight} className="flex items-start gap-3 text-muted-foreground">
-                    <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-primary" />
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                     {highlight}
                   </li>
                 ))}
@@ -166,19 +122,35 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
             </section>
           )}
 
+          {meta.itinerary.length > 0 && (
+            <section className="rounded-2xl bg-card p-8 shadow-sm">
+              <div className="mb-6 flex items-center gap-2">
+                <CalendarDays className="h-6 w-6 text-primary" />
+                <h2 className="text-2xl font-bold text-foreground">Itinerary</h2>
+              </div>
+              <div className="relative space-y-0">
+                <div className="absolute left-[19px] top-3 bottom-3 w-px bg-border" />
+                {meta.itinerary.map((day) => (
+                  <div key={day.day} className="relative flex gap-5 pb-8 last:pb-0">
+                    <div className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">
+                      {day.day}
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-foreground">{day.title}</h3>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{day.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
           <section className="rounded-2xl bg-card p-8 shadow-sm">
             <h2 className="text-2xl font-bold text-foreground">What is included</h2>
             <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-              {[
-                "Local English-speaking guide",
-                "4WD vehicle with driver",
-                "Ger camp and tent accommodation",
-                "All meals during the tour",
-                "National park entrance fees",
-                "Airport transfers in Ulaanbaatar",
-              ].map((item) => (
+              {inclusions.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-muted-foreground">
-                  <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-primary" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                   {item}
                 </li>
               ))}
@@ -186,7 +158,7 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
           </section>
         </div>
 
-        <aside className="space-y-6">
+        <aside className="space-y-6 lg:sticky lg:top-28 lg:self-start">
           <TourBookingForm slug={slug} title={post.title ?? ""} basePrice={meta.basePrice} />
 
           <div className="rounded-2xl bg-card p-6 shadow-sm">
@@ -196,7 +168,7 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
             </p>
             <Link
               href="/contact"
-              className="mt-4 inline-block rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
+              className="mt-4 inline-block rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
             >
               Contact us
             </Link>
