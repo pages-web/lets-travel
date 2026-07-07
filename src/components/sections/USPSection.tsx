@@ -2,6 +2,7 @@ import { Compass, Sparkles, Leaf, Shield } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { MotionCard } from "@/components/motion/MotionCard";
+import Image from "@/components/common/Image";
 
 export default function USPSection() {
   const t = useTranslations("usp");
@@ -11,21 +12,25 @@ export default function USPSection() {
       icon: Compass,
       title: t("localGuides"),
       description: t("localGuidesDesc"),
+      image: "/images/usp-guides.jpg",
     },
     {
       icon: Sparkles,
       title: t("tailorMade"),
       description: t("tailorMadeDesc"),
+      image: "/images/usp-camp.jpg",
     },
     {
       icon: Leaf,
       title: t("sustainable"),
       description: t("sustainableDesc"),
+      image: "/images/usp-nature.jpg",
     },
     {
       icon: Shield,
       title: t("safety"),
       description: t("safetyDesc"),
+      image: "/images/usp-safety.jpg",
     },
   ];
 
@@ -48,12 +53,22 @@ export default function USPSection() {
         <div className="grid gap-6 md:grid-cols-2">
           {items.map((item, index) => (
             <FadeIn key={item.title} direction="up" delay={index * 0.08}>
-              <MotionCard className="rounded-xl bg-background p-8">
-                <item.icon className="h-8 w-8 text-primary" />
-                <h3 className="mt-4 text-lg font-bold text-foreground">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {item.description}
-                </p>
+              <MotionCard className="overflow-hidden rounded-xl bg-background">
+                <div className="relative aspect-[16/7] overflow-hidden bg-muted">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-8">
+                  <item.icon className="h-8 w-8 text-primary" />
+                  <h3 className="mt-4 text-lg font-bold text-foreground">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {item.description}
+                  </p>
+                </div>
               </MotionCard>
             </FadeIn>
           ))}
