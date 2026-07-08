@@ -39,27 +39,7 @@ export default function TourBookingForm({ title, basePrice }: TourBookingFormPro
   if (loading) {
     return (
       <div className="rounded-2xl bg-card p-6 shadow-sm lg:p-8">
-        <div className="h-48 animate-pulse rounded-xl bg-muted" />
-      </div>
-    );
-  }
-
-  if (!user) {
-    return (
-      <div className="rounded-2xl bg-card p-6 shadow-sm lg:p-8">
-        <div className="text-center">
-          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
-            <Users className="h-7 w-7 text-primary" />
-          </div>
-          <h3 className="mt-4 text-lg font-bold text-foreground">{t("loginToBook")}</h3>
-          <p className="mt-2 text-sm text-muted-foreground">{t("loginToBookDesc")}</p>
-          <Link
-            href="/login"
-            className="mt-5 inline-block rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            {t("login")}
-          </Link>
-        </div>
+        <div className="h-64 animate-pulse rounded-xl bg-muted" />
       </div>
     );
   }
@@ -76,11 +56,11 @@ export default function TourBookingForm({ title, basePrice }: TourBookingFormPro
   }
 
   return (
-    <form onSubmit={handleSubmit} className="rounded-2xl bg-card p-6 shadow-sm lg:p-8">
+    <div className="rounded-2xl bg-card p-6 shadow-sm lg:p-8">
       <h3 className="text-xl font-bold text-foreground">{t("bookThisTour")}</h3>
       <p className="mt-1 text-sm text-muted-foreground">{title}</p>
 
-      <div className="mt-6 space-y-5">
+      <form onSubmit={handleSubmit} className="mt-6 space-y-5">
         <div className="space-y-2">
           <label htmlFor="startDate" className="flex items-center gap-2 text-sm font-semibold text-foreground">
             <CalendarDays className="h-4 w-4 text-primary" />
@@ -116,26 +96,41 @@ export default function TourBookingForm({ title, basePrice }: TourBookingFormPro
             </div>
           ))}
         </div>
-      </div>
 
-      <div className="mt-6 rounded-xl bg-muted p-4">
-        <div className="flex items-center justify-between text-sm">
-          <span className="text-muted-foreground">{t("travelers")}</span>
-          <span className="font-medium text-foreground">{totalTravelers}</span>
+        <div className="rounded-xl bg-muted p-4">
+          <div className="flex items-center justify-between text-sm">
+            <span className="text-muted-foreground">{t("travelers")}</span>
+            <span className="font-medium text-foreground">{totalTravelers}</span>
+          </div>
+          <div className="mt-2 flex items-center justify-between">
+            <span className="text-muted-foreground">{t("estimatedTotal")}</span>
+            <span className="text-lg font-bold text-foreground">${Math.round(estimatedPrice).toLocaleString()}</span>
+          </div>
+          <p className="mt-1 text-xs text-muted-foreground">{t("priceNote")}</p>
         </div>
-        <div className="mt-2 flex items-center justify-between">
-          <span className="text-muted-foreground">{t("estimatedTotal")}</span>
-          <span className="text-lg font-bold text-foreground">${Math.round(estimatedPrice).toLocaleString()}</span>
-        </div>
-        <p className="mt-1 text-xs text-muted-foreground">{t("priceNote")}</p>
-      </div>
 
-      <MotionButton
-        type="submit"
-        className="mt-6 w-full rounded-full bg-primary py-3.5 text-base font-semibold text-primary-foreground hover:bg-primary/90"
-      >
-        {t("sendBookingRequest")}
-      </MotionButton>
-    </form>
+        {user ? (
+          <MotionButton
+            type="submit"
+            className="w-full rounded-full bg-primary py-3.5 text-base font-semibold text-primary-foreground hover:bg-primary/90"
+          >
+            {t("sendBookingRequest")}
+          </MotionButton>
+        ) : (
+          <div className="space-y-3">
+            <div className="flex items-center gap-3 rounded-lg bg-secondary p-3 text-sm text-muted-foreground">
+              <Users className="h-5 w-5 text-primary" />
+              {t("loginToBookDesc")}
+            </div>
+            <Link
+              href="/login"
+              className="block w-full rounded-full bg-primary py-3.5 text-center text-base font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              {t("loginToBook")}
+            </Link>
+          </div>
+        )}
+      </form>
+    </div>
   );
 }
