@@ -11,5 +11,6 @@
   "footer": { "tagline": "호기심 많은 여행자를 위한 정성껏 만든 몽골 여행.", "explore": "둘러보기", "support": "지원", "rights": "모든 권리 보유." },
   "contact": { "name": "이름", "email": "이메일", "interest": "투어 또는 관심사", "message": "메시지", "send": "문의 본", "office": "사무실", "phone": "전화" },
   "toursPage": { "filters": "필터", "duration": "기간", "priceRange": "가격 범위", "activityLevel": "활동 수준", "theme": "테마", "showing": "표시 중", "sort": "정렬" },
-  "auth": { "login": "로그인", "logout": "로그아웃", "register": "회원가입", "account": "내 계정" }
+  "auth": { "login": "로그인", "logout": "로그아웃", "register": "회원가입", "account": "내 계정" },
+  "booking": { "bookThisTour": "투어 예약", "preferredStartDate": "희망 시작일", "adults": "성인", "children": "아동", "infants": "유아", "travelers": "여행객", "estimatedTotal": "예상 총액", "priceNote": "유아는 무료, 아동은 30% 할인. 최종 가격은 당사 팀이 확인합니다.", "sendBookingRequest": "예약 요청 보내기", "requestReceived": "요청 접수됨", "requestReceivedDesc": "{title}에 관심을 가져 주셔서 감사합니다. 24시간 이내에 availability와 다음 단계를 확인하기 위해 연락드리겠습니다.", "loginToBook": "예약하려면 로그인", "loginToBookDesc": "예약 요청을 보내시려면 계정에 로그인해 주세요.", "login": "로그인" }
 }

@@ -92,5 +92,21 @@
     "logout": "Log out",
     "register": "Register",
     "account": "My Account"
+  },
+  "booking": {
+    "bookThisTour": "Book this tour",
+    "preferredStartDate": "Preferred start date",
+    "adults": "Adults",
+    "children": "Children",
+    "infants": "Infants",
+    "travelers": "Travelers",
+    "estimatedTotal": "Estimated total",
+    "priceNote": "Infants travel free. Children 30% off. Final price confirmed by our team.",
+    "sendBookingRequest": "Send booking request",
+    "requestReceived": "Request received",
+    "requestReceivedDesc": "Thank you for your interest in {title}. We will contact you within 24 hours to confirm availability and next steps.",
+    "loginToBook": "Log in to book",
+    "loginToBookDesc": "Please log in to your account to send a booking request.",
+    "login": "Log in"
   }
 }

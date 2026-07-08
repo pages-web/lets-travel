@@ -11,5 +11,6 @@
   "footer": { "tagline": "为好奇旅行者精心打造的蒙古之旅。", "explore": "探索", "support": "支持", "rights": "版权所有。" },
   "contact": { "name": "姓名", "email": "电子邮箱", "interest": "旅游或兴趣", "message": "留言", "send": "发送咨询", "office": "办公室", "phone": "电话" },
   "toursPage": { "filters": "筛选", "duration": "时长", "priceRange": "价格范围", "activityLevel": "活动强度", "theme": "主题", "showing": "显示", "sort": "排序" },
-  "auth": { "login": "登录", "logout": "退出", "register": "注册", "account": "我的账户" }
+  "auth": { "login": "登录", "logout": "退出", "register": "注册", "account": "我的账户" },
+  "booking": { "bookThisTour": "预订此旅游", "preferredStartDate": "首选出发日期", "adults": "成人", "children": "儿童", "infants": "婴儿", "travelers": "旅客", "estimatedTotal": "预计总价", "priceNote": "婴儿免费。儿童享30%折扣。最终价格由我们团队确认。", "sendBookingRequest": "发送预订请求", "requestReceived": "请求已收到", "requestReceivedDesc": "感谢您对{title}的兴趣。我们将在24小时内联系您确认 availability 和后续步骤。", "loginToBook": "登录以预订", "loginToBookDesc": "请登录您的账户以发送预订请求。", "login": "登录" }
 }

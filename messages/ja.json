@@ -11,5 +11,6 @@
   "footer": { "tagline": "好奇心旺盛な旅行者のための手作りモンゴル旅。", "explore": "探検", "support": "サポート", "rights": "全著作権所有。" },
   "contact": { "name": "お名前", "email": "メール", "interest": "ツアーまたは興味", "message": "メッセージ", "send": "問い合わせを送る", "office": "オフィス", "phone": "電話" },
   "toursPage": { "filters": "フィルター", "duration": "期間", "priceRange": "価格帯", "activityLevel": "活動レベル", "theme": "テーマ", "showing": "表示中", "sort": "並び替え" },
-  "auth": { "login": "ログイン", "logout": "ログアウト", "register": "登録", "account": "マイアカウント" }
+  "auth": { "login": "ログイン", "logout": "ログアウト", "register": "登録", "account": "マイアカウント" },
+  "booking": { "bookThisTour": "ツアーを予約", "preferredStartDate": "希望開始日", "adults": "大人", "children": "子供", "infants": "乳幼児", "travelers": "旅行者", "estimatedTotal": "推定合計", "priceNote": "乳幼児は無料。子供は30%オフ。最終価格は当社チームが確認します。", "sendBookingRequest": "予約リクエストを送信", "requestReceived": "リクエストを受け付けました", "requestReceivedDesc": "{title}にご興味をお持ちいただきありがとうございます。24時間以内に availability と次のステップを確認してご連絡いたします。", "loginToBook": "予約するにはログイン", "loginToBookDesc": "予約リクエストを送信するには、アカウントにログインしてください。", "login": "ログイン" }
 }
